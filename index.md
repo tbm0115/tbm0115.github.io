@@ -2,8 +2,10 @@
 
 # Sponsored Open Source Projects
 
+
 | Name | Site | Status |
 | --- | --- | --- |
+|  |  |  |
 
 There are currently `0` sponsors.
 
