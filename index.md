@@ -43,3 +43,4 @@ Do you like my work or need additional support? Become a [GitHub Developer Spons
 | [TraisMcAllister.info](https://traismcallister.info) | Yes | Links to TraisMcallister.me |
 | [amaterialworld.biz](https://amaterialworld.biz) | Yes | Craft Site |
 | [amaterialworld.us](https://amaterialworld.us) | No | Deprecated Craft Site |
+| [minutemen.dev]() | No | Placeholder |
