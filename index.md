@@ -44,3 +44,9 @@ Do you like my work or need additional support? Become a [GitHub Developer Spons
 | [amaterialworld.biz](https://amaterialworld.biz) | Yes | Craft Site |
 | [amaterialworld.us](https://amaterialworld.us) | No | Deprecated Craft Site |
 | [minutemen.dev]() | No | Placeholder |
+| [garbage.news]() | No | Placeholder |
+| [mobilizedmanufacturing.com]() | No | Placeholder |
+| [mobilizedmfg.com]() | No | Placeholder |
+| [samanthamcallister.me]() | No | Placeholder |
+| [tabletopexpress.games]() | No | Placeholder |
+| [tams.app]() | No | Placeholder |
