@@ -129,14 +129,14 @@
     {
       "type": "Push",
       "repo": "tbm0115/tbm0115.github.io",
-      "summary": "Pushed 0 commits to master",
+      "summary": "Updated master",
       "url": "https://github.com/tbm0115/tbm0115.github.io",
       "createdAt": "2026-06-01T18:14:45Z"
     },
     {
       "type": "Push",
       "repo": "tbm0115/tbm0115.github.io",
-      "summary": "Pushed 0 commits to master",
+      "summary": "Updated master",
       "url": "https://github.com/tbm0115/tbm0115.github.io",
       "createdAt": "2026-06-01T17:42:49Z"
     },
@@ -150,49 +150,49 @@
     {
       "type": "Push",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "Pushed 0 commits to master",
+      "summary": "Updated master",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:59:36Z"
     },
     {
       "type": "Delete",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "Delete",
+      "summary": "Deleted branch",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:41:56Z"
     },
     {
       "type": "Push",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "Pushed 0 commits to master",
+      "summary": "Updated master",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:41:54Z"
     },
     {
       "type": "Pull Request",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "merged PR #4: undefined",
+      "summary": "Merged PR #4",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:41:52Z"
     },
     {
       "type": "Pull Request",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "opened PR #4: undefined",
+      "summary": "Opened PR #4",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:41:36Z"
     },
     {
       "type": "Pull Request",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "labeled PR #4: undefined",
+      "summary": "Labeled PR #4",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:41:36Z"
     },
     {
       "type": "Pull Request",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "assigned PR #4: undefined",
+      "summary": "Assigned PR #4",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:41:36Z"
     }

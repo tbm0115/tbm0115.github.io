@@ -70,6 +70,20 @@
     target.innerHTML = items.map(renderer).join("");
   }
 
+  function renderContainer(name, items, renderer, emptyText) {
+    const target = list(name);
+    if (!target) {
+      return;
+    }
+
+    if (!items || items.length === 0) {
+      target.innerHTML = `<p>${escapeText(emptyText)}</p>`;
+      return;
+    }
+
+    target.innerHTML = items.map(renderer).join("");
+  }
+
   async function loadJson(path) {
     const response = await fetch(path, { cache: "no-store" });
     if (!response.ok) {
@@ -84,11 +98,95 @@
       return "presence-status presence-status--ok";
     }
 
-    if (status === "skipped" || status === "pending") {
+    if (status === "skipped" || status === "pending" || status === "warn") {
       return "presence-status presence-status--warn";
     }
 
     return "presence-status presence-status--error";
+  }
+
+  function reachabilityLabel(item) {
+    const status = item.reachabilityStatus || item.check?.reachabilityStatus;
+    if (status === "reachable" || item.isReachable === true) {
+      return "Reachable";
+    }
+
+    if (status === "unreachable") {
+      return "Offline";
+    }
+
+    return "Not checked";
+  }
+
+  function reachabilityTone(item) {
+    const status = item.reachabilityStatus || item.check?.reachabilityStatus;
+    if (status === "reachable" || item.isReachable === true) {
+      return "ok";
+    }
+
+    if (status === "unreachable") {
+      return "error";
+    }
+
+    return "warn";
+  }
+
+  function domainStatusLabel(domain) {
+    if (domain.statusLabel) {
+      return domain.statusLabel;
+    }
+
+    if (domain.status === "in-development") {
+      return "In development";
+    }
+
+    if (domain.status === "inactive" || domain.isActive === false) {
+      return "Inactive";
+    }
+
+    return "Active";
+  }
+
+  function splitRepoUrl(url) {
+    const match = /^https:\/\/github\.com\/([^/]+)\/([^/#?]+)/i.exec(url || "");
+    return match ? { owner: match[1], name: match[2] } : null;
+  }
+
+  function githubPreviewUrl(repo) {
+    if (repo.socialPreviewUrl) {
+      return repo.socialPreviewUrl;
+    }
+
+    const fromUrl = splitRepoUrl(repo.url);
+    const fullName = repo.fullName || (fromUrl ? `${fromUrl.owner}/${fromUrl.name}` : "");
+    const [owner, name] = fullName.split("/");
+    if (!owner || !name) {
+      return "";
+    }
+
+    const cacheKey = String(repo.updatedAt || repo.pushedAt || "latest").replace(/[^0-9A-Za-z]/g, "") || "latest";
+    return `https://opengraph.githubassets.com/${cacheKey}/${owner}/${name}`;
+  }
+
+  function activityForRepo(repo, events) {
+    if (repo.latestActivity) {
+      return repo.latestActivity;
+    }
+
+    const fullName = repo.fullName || splitRepoUrl(repo.url)?.name || repo.name;
+    const event = (events || []).find((item) => {
+      return item.repo && fullName && item.repo.toLowerCase().endsWith(String(fullName).toLowerCase());
+    });
+
+    if (event) {
+      return event;
+    }
+
+    return {
+      summary: `Updated ${compactDate(repo.pushedAt || repo.updatedAt) || "recently"}`,
+      url: repo.url,
+      createdAt: repo.pushedAt || repo.updatedAt
+    };
   }
 
   function renderDomains(data) {
@@ -96,13 +194,41 @@
     const checked = summary.checked || 0;
     const reachable = summary.reachable || 0;
     const activeButUnreachable = summary.activeButUnreachable || 0;
+    const unknown = summary.unknown || 0;
 
-    setField("domains-summary", `${reachable}/${checked} reachable`);
+    setField("domains-summary", checked > 0 ? `${reachable}/${checked} reachable` : "Awaiting check");
     setField(
       "domains-detail",
-      activeButUnreachable === 0
+      checked === 0
+        ? "Domain inventory is ready for the next action run."
+        : activeButUnreachable === 0
         ? "All expected active domains responded."
-        : `${activeButUnreachable} expected active domain${activeButUnreachable === 1 ? "" : "s"} need attention.`
+        : `${activeButUnreachable} expected active domain${activeButUnreachable === 1 ? "" : "s"} need attention; ${unknown} unknown.`
+    );
+
+    renderContainer(
+      "sites",
+      (data.domains || []).slice().sort((a, b) => {
+        const rank = { active: 0, "in-development": 1, inactive: 2 };
+        return (rank[a.status] ?? 1) - (rank[b.status] ?? 1) || String(a.name || a.base).localeCompare(String(b.name || b.base));
+      }),
+      (domain) => {
+        const url = domain.url || `https://${domain.base}`;
+        const tone = reachabilityTone(domain);
+        const statusText = `${domainStatusLabel(domain)} - ${reachabilityLabel(domain)}`;
+
+        return `
+          <article class="presence-card presence-card--site">
+            <div class="presence-card__topline">
+              <span class="${statusClass(tone)}">${escapeText(statusText)}</span>
+            </div>
+            <h3><a href="${escapeText(url)}">${escapeText(domain.name || domain.base)}</a></h3>
+            <p>${escapeText(domain.description || "Public domain")}</p>
+            <small>${escapeText(domain.base || url)}</small>
+          </article>
+        `;
+      },
+      "No sites are configured yet."
     );
 
     return data.lastUpdatedAt;
@@ -110,12 +236,14 @@
 
   function renderSocial(data) {
     const summary = data.summary || {};
-    const checked = summary.checked || 0;
-    const reachable = summary.reachable || 0;
     const feedsChecked = summary.feedsChecked || 0;
+    const unknown = summary.unknown || 0;
 
-    setField("social-summary", `${reachable}/${checked} reachable`);
-    setField("social-detail", `${feedsChecked} public feed${feedsChecked === 1 ? "" : "s"} refreshed.`);
+    setField("social-summary", feedsChecked > 0 ? `${feedsChecked} refreshed` : "Awaiting activity");
+    setField(
+      "social-detail",
+      `${feedsChecked} public activity source${feedsChecked === 1 ? "" : "s"} refreshed${unknown ? `; ${unknown} profile probe${unknown === 1 ? "" : "s"} inconclusive` : ""}.`
+    );
 
     renderList(
       "updates",
@@ -135,6 +263,7 @@
   function renderDevelopment(data) {
     const summary = data.summary || {};
     const status = data.status || "pending";
+    const events = data.latestPublicEvents || [];
 
     setField("development-summary", `${summary.publicRepos || 0} repos`);
     setField(
@@ -152,6 +281,38 @@
         </li>
       `,
       "No recent public GitHub events captured."
+    );
+
+    renderContainer(
+      "development-repos",
+      data.recentRepositories || [],
+      (repo) => {
+        const activity = activityForRepo(repo, events);
+        const previewUrl = githubPreviewUrl(repo);
+        const meta = [repo.language, `${repo.stars || 0} stars`, `${repo.forks || 0} forks`]
+          .filter(Boolean)
+          .join(" - ");
+
+        return `
+          <article class="presence-card presence-card--repo">
+            ${
+              previewUrl
+                ? `<a class="presence-card__media" href="${escapeText(repo.url)}" aria-label="${escapeText(repo.name)} repository"><img src="${escapeText(previewUrl)}" alt="" loading="lazy"></a>`
+                : ""
+            }
+            <div class="presence-card__body">
+              <h3><a href="${escapeText(repo.url)}">${escapeText(repo.name)}</a></h3>
+              <p>${escapeText(repo.description || "Public GitHub repository")}</p>
+              <small>${escapeText(meta)}</small>
+              <div class="presence-card__activity">
+                <a href="${escapeText(activity.url || repo.url)}">${escapeText(activity.summary || "Recent repository activity")}</a>
+                ${activity.createdAt ? `<small>${escapeText(compactDate(activity.createdAt))}</small>` : ""}
+              </div>
+            </div>
+          </article>
+        `;
+      },
+      "No public repositories captured yet."
     );
 
     return data.lastUpdatedAt;

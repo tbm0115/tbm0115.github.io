@@ -1,11 +1,12 @@
 {
-  "lastUpdatedAt": "2026-06-01T18:17:05.569Z",
+  "lastUpdatedAt": null,
   "summary": {
-    "checked": 9,
+    "checked": 0,
     "reachable": 0,
-    "unreachable": 9,
+    "unreachable": 0,
+    "unknown": 0,
     "feedsChecked": 0,
-    "feedErrors": 1
+    "feedErrors": 0
   },
   "profiles": [
     {
@@ -13,173 +14,66 @@
       "category": "Software",
       "type": "Contributor",
       "url": "https://github.com/tbm0115",
-      "feedUrl": "https://github.com/tbm0115.atom",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 10480,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "error",
-      "feedError": "fetch failed",
-      "latestItems": []
+      "activitySource": "github-events",
+      "githubUsername": "tbm0115",
+      "feedUrl": "https://github.com/tbm0115.atom"
     },
     {
       "name": "CodePen",
       "category": "Software",
       "type": "Contributor",
-      "url": "https://codepen.io/tbm0115",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 16474,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "url": "https://codepen.io/tbm0115"
     },
     {
       "name": "Stack Overflow",
       "category": "Software",
       "type": "Contributor",
       "url": "https://stackoverflow.com/users/story/4585104",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 10478,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "activitySource": "stackexchange-timeline",
+      "stackExchangeSite": "stackoverflow",
+      "stackExchangeUserId": 4585104
     },
     {
       "name": "Stack Exchange - 3D Printing",
       "category": "3D Printing",
       "type": "Contributor, Former Moderator",
       "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 10477,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "activitySource": "stackexchange-timeline",
+      "stackExchangeSite": "3dprinting",
+      "stackExchangeUserId": 98
     },
     {
       "name": "Stack Exchange - Internet of Things",
       "category": "Hobby",
       "type": "Contributor",
       "url": "https://iot.stackexchange.com/users/16/tbm0115",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 10476,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "activitySource": "stackexchange-timeline",
+      "stackExchangeSite": "iot",
+      "stackExchangeUserId": 16
     },
     {
       "name": "LinkedIn",
       "category": "Software",
       "type": "Member",
-      "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
-        "responseTimeMs": 10474,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/"
     },
     {
       "name": "Thingiverse",
       "category": "3D Printing",
       "type": "Contributor",
-      "url": "https://www.thingiverse.com/tbm0115/about",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 10473,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "url": "https://www.thingiverse.com/tbm0115/about"
     },
     {
       "name": "MakeXYZ",
       "category": "3D Printing",
       "type": "Vendor",
-      "url": "https://www.makexyz.com/store/maker/tbm0115",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 10472,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "url": "https://www.makexyz.com/store/maker/tbm0115"
     },
     {
       "name": "GrabCAD",
       "category": "3D Printing",
       "type": "Contributor",
-      "url": "https://grabcad.com/trais.mcallister-1/",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 10471,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      },
-      "feedStatus": "not-configured",
-      "latestItems": []
+      "url": "https://grabcad.com/trais.mcallister-1/"
     }
   ],
   "recentUpdates": []

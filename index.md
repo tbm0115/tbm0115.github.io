@@ -88,28 +88,20 @@ Do you like my work or need additional support? Become a [GitHub Developer Spons
 | [GrabCAD](https://grabcad.com/trais.mcallister-1/) | 3D Printing | Contributor |
 
 
+# My Development
+
+<section class="presence-section" aria-label="Recent public repositories">
+  <div class="presence-card-grid presence-card-grid--repos" data-live-list="development-repos">
+    <p>Loading repositories...</p>
+  </div>
+</section>
+
 # My Sites
 
-| Name | Active | Description |
-| --- | --- | --- |
-| [LightWorksTM.com](https://lightworkstm.com) | No | LightWorks Cost of Living Calculator |
-| [Utilities.games](https://utilities.games) | In-Development | Custom Video Game Utilities |
-| [MTConnect.app]() | No | Placeholder |
-| [Consoul.dev](https://consoul.dev) | Yes | Project site for Consoul |
-| [IIoT.wiki]() | No | Placeholder |
-| [LightWorks.app]() | No | Placeholder |
-| [LightWorksTM.net]() | No | Placeholder |
-| [MakerBot.dev]() | No | Placeholder |
-| [MTConnect.wiki]() | No | Placeholder |
-| [TraisMcAllister.info](https://traismcallister.info) | Yes | Links to TraisMcallister.me |
-| [amaterialworld.biz](https://amaterialworld.biz) | Yes | Craft Site |
-| [amaterialworld.us](https://amaterialworld.us) | No | Deprecated Craft Site |
-| [minutemen.dev]() | No | Placeholder |
-| [garbage.news]() | No | Placeholder |
-| [mobilizedmanufacturing.com]() | No | Placeholder |
-| [mobilizedmfg.com]() | No | Placeholder |
-| [samanthamcallister.me]() | No | Placeholder |
-| [tabletopexpress.games]() | No | Placeholder |
-| [tams.app]() | No | Placeholder |
+<section class="presence-section" aria-label="Public and reserved domains">
+  <div class="presence-card-grid presence-card-grid--sites" data-live-list="sites">
+    <p>Loading sites...</p>
+  </div>
+</section>
 
 <script src="./assets/live-presence.js" defer></script>

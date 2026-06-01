@@ -1,147 +1,174 @@
 {
-  "lastUpdatedAt": "2026-06-01T18:17:05.569Z",
+  "lastUpdatedAt": null,
   "summary": {
-    "checked": 8,
-    "reachable": 1,
-    "unreachable": 7,
-    "activeExpected": 6,
-    "activeButUnreachable": 5
+    "checked": 0,
+    "reachable": 0,
+    "unreachable": 0,
+    "unknown": 0,
+    "activeExpected": 0,
+    "activeButUnreachable": 0
   },
   "domains": [
     {
-      "base": "consoul.dev",
-      "isActive": true,
-      "description": "Project site for Consoul",
-      "url": "https://consoul.dev",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://consoul.dev",
-        "responseTimeMs": 10554,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      }
-    },
-    {
-      "base": "recipedia.lightworks.app",
-      "isActive": true,
-      "description": "Recipedia PWA",
-      "url": "https://recipedia.lightworks.app",
-      "isReachable": true,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": true,
-        "statusCode": 200,
-        "statusText": "OK",
-        "finalUrl": "https://recipedia.lightworks.app/",
-        "responseTimeMs": 6630,
-        "checkedAt": "2026-06-01T18:17:05.569Z"
-      }
-    },
-    {
-      "base": "mtconnect.wiki",
-      "isActive": true,
-      "description": "Forwards to http://mtcup.org",
-      "url": "https://mtconnect.wiki",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://mtconnect.wiki",
-        "responseTimeMs": 15001,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "Request timed out"
-      }
-    },
-    {
-      "base": "offthewallcreations.xyz",
+      "name": "LightWorksTM.com",
+      "base": "lightworkstm.com",
       "isActive": false,
-      "description": "Off the Wall Creations square website",
-      "url": "https://offthewallcreations.xyz",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://offthewallcreations.xyz",
-        "responseTimeMs": 10491,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      }
+      "status": "inactive",
+      "description": "LightWorks Cost of Living Calculator"
     },
     {
-      "base": "otwc.xyz",
-      "isActive": false,
-      "description": "Off the Wall Creations square website short link",
-      "url": "https://otwc.xyz",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://otwc.xyz",
-        "responseTimeMs": 10490,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      }
-    },
-    {
-      "base": "traismcallister.info",
-      "isActive": true,
-      "description": "Forwards to traismcallister.me",
-      "url": "https://traismcallister.info",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://traismcallister.info",
-        "responseTimeMs": 10489,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      }
-    },
-    {
-      "base": "traismcallister.me",
-      "isActive": true,
-      "description": "Aggregate for my online presence",
-      "url": "https://traismcallister.me",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://traismcallister.me",
-        "responseTimeMs": 10489,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      }
-    },
-    {
+      "name": "Utilities.games",
       "base": "utilities.games",
       "isActive": true,
-      "description": "PWA for hosting random video game reference data and tools",
-      "url": "https://utilities.games",
-      "isReachable": false,
-      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
-      "check": {
-        "ok": false,
-        "statusCode": null,
-        "statusText": "Request failed",
-        "finalUrl": "https://utilities.games",
-        "responseTimeMs": 10488,
-        "checkedAt": "2026-06-01T18:17:05.569Z",
-        "error": "fetch failed"
-      }
+      "status": "in-development",
+      "description": "Custom video game utilities and reference tools"
+    },
+    {
+      "name": "MTConnect.app",
+      "base": "mtconnect.app",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "Consoul.dev",
+      "base": "consoul.dev",
+      "isActive": true,
+      "status": "active",
+      "description": "Project site for Consoul"
+    },
+    {
+      "name": "IIoT.wiki",
+      "base": "iiot.wiki",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "LightWorks.app",
+      "base": "lightworks.app",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "Recipedia",
+      "base": "recipedia.lightworks.app",
+      "isActive": true,
+      "status": "active",
+      "description": "Recipedia PWA"
+    },
+    {
+      "name": "LightWorksTM.net",
+      "base": "lightworkstm.net",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "MakerBot.dev",
+      "base": "makerbot.dev",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "MTConnect.wiki",
+      "base": "mtconnect.wiki",
+      "isActive": true,
+      "status": "active",
+      "description": "Forwards to http://mtcup.org"
+    },
+    {
+      "name": "TraisMcAllister.info",
+      "base": "traismcallister.info",
+      "isActive": true,
+      "status": "active",
+      "description": "Forwards to traismcallister.me"
+    },
+    {
+      "name": "TraisMcAllister.me",
+      "base": "traismcallister.me",
+      "isActive": true,
+      "status": "active",
+      "description": "Aggregate for my online presence"
+    },
+    {
+      "name": "amaterialworld.biz",
+      "base": "amaterialworld.biz",
+      "isActive": true,
+      "status": "active",
+      "description": "Craft site"
+    },
+    {
+      "name": "amaterialworld.us",
+      "base": "amaterialworld.us",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Deprecated craft site"
+    },
+    {
+      "name": "minutemen.dev",
+      "base": "minutemen.dev",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "garbage.news",
+      "base": "garbage.news",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "mobilizedmanufacturing.com",
+      "base": "mobilizedmanufacturing.com",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "mobilizedmfg.com",
+      "base": "mobilizedmfg.com",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "samanthamcallister.me",
+      "base": "samanthamcallister.me",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "tabletopexpress.games",
+      "base": "tabletopexpress.games",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "tams.app",
+      "base": "tams.app",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Placeholder"
+    },
+    {
+      "name": "Off the Wall Creations",
+      "base": "offthewallcreations.xyz",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Off the Wall Creations Square site"
+    },
+    {
+      "name": "OTWC short link",
+      "base": "otwc.xyz",
+      "isActive": false,
+      "status": "inactive",
+      "description": "Off the Wall Creations short link"
     }
   ]
 }

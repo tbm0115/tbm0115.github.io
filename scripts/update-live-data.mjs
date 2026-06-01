@@ -87,8 +87,52 @@ function normalizeUrl(value) {
   return `https://${trimmed.replace(/^\/+/, "")}`;
 }
 
+function classifyReachability(response) {
+  if (!response) {
+    return "unknown";
+  }
+
+  if (response.status >= 200 && response.status < 400) {
+    return "reachable";
+  }
+
+  if ([401, 403, 429].includes(response.status)) {
+    return "unknown";
+  }
+
+  return "unreachable";
+}
+
+function responseToCheck(response, started) {
+  const reachabilityStatus = classifyReachability(response);
+
+  return {
+    ok: reachabilityStatus === "reachable",
+    reachabilityStatus,
+    statusCode: response.status,
+    statusText: response.statusText,
+    finalUrl: response.url,
+    responseTimeMs: Date.now() - started,
+    checkedAt
+  };
+}
+
+function requestErrorMessage(error) {
+  return error.name === "AbortError" ? "Request timed out" : error.message;
+}
+
+function fallbackUrls(url, allowHttpFallback) {
+  if (!url || !allowHttpFallback || !url.startsWith("https://")) {
+    return [url];
+  }
+
+  return [url, `http://${url.slice("https://".length)}`];
+}
+
 async function checkUrl(url, options = {}) {
   const timeoutMs = options.timeoutMs ?? 15000;
+  const preferGet = options.preferGet === true;
+  const allowHttpFallback = options.allowHttpFallback === true;
   const started = Date.now();
 
   if (!url) {
@@ -99,52 +143,84 @@ async function checkUrl(url, options = {}) {
       finalUrl: null,
       responseTimeMs: 0,
       checkedAt,
+      reachabilityStatus: "unreachable",
       error: "Missing URL"
     };
   }
 
-  try {
-    let response = await fetchWithTimeout(
-      url,
-      {
-        method: "HEAD",
-        headers: requestHeaders({ Accept: "*/*" })
-      },
-      timeoutMs
-    );
+  const methods = preferGet ? ["GET"] : ["HEAD", "GET"];
+  let lastCheck = null;
+  let lastError = null;
 
-    if (!response.ok || [403, 405, 501].includes(response.status)) {
-      response = await fetchWithTimeout(
-        url,
-        {
-          method: "GET",
-          headers: requestHeaders({
-            Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-          })
-        },
-        timeoutMs
-      );
+  for (const candidateUrl of fallbackUrls(url, allowHttpFallback)) {
+    for (const method of methods) {
+      try {
+        const response = await fetchWithTimeout(
+          candidateUrl,
+          {
+            method,
+            headers: requestHeaders({
+              Accept:
+                method === "HEAD"
+                  ? "*/*"
+                  : "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+            })
+          },
+          timeoutMs
+        );
+        const check = responseToCheck(response, started);
+
+        if (check.ok || method === "GET") {
+          return check;
+        }
+
+        lastCheck = check;
+      } catch (error) {
+        lastError = error;
+      }
     }
+  }
 
-    return {
-      ok: response.status >= 200 && response.status < 400,
-      statusCode: response.status,
-      statusText: response.statusText,
-      finalUrl: response.url,
-      responseTimeMs: Date.now() - started,
-      checkedAt
-    };
-  } catch (error) {
-    return {
+  return (
+    lastCheck || {
       ok: false,
+      reachabilityStatus: "unknown",
       statusCode: null,
       statusText: "Request failed",
       finalUrl: url,
       responseTimeMs: Date.now() - started,
       checkedAt,
-      error: error.name === "AbortError" ? "Request timed out" : error.message
-    };
+      error: lastError ? requestErrorMessage(lastError) : "Request failed"
+    }
+  );
+}
+
+function isReachable(item) {
+  return item.check?.reachabilityStatus === "reachable" || item.check?.ok === true;
+}
+
+function isUnreachable(item) {
+  return item.check?.reachabilityStatus === "unreachable";
+}
+
+function isUnknownReachability(item) {
+  return item.check?.reachabilityStatus === "unknown";
+}
+
+function isActiveDomain(domain) {
+  return domain.isActive !== false && domain.status !== "inactive";
+}
+
+function statusLabel(status, isActive) {
+  if (status === "in-development") {
+    return "In development";
   }
+
+  if (status === "inactive" || isActive === false) {
+    return "Inactive";
+  }
+
+  return "Active";
 }
 
 async function fetchJson(url, options = {}) {
@@ -194,12 +270,14 @@ async function updateDomains() {
   const checkedDomains = await Promise.all(
     domains.map(async (domain) => {
       const url = normalizeUrl(domain.url || domain.base);
-      const check = await checkUrl(url);
+      const check = await checkUrl(url, { allowHttpFallback: true });
 
       return {
         ...domain,
         url,
+        statusLabel: domain.statusLabel || statusLabel(domain.status, domain.isActive),
         isReachable: check.ok,
+        reachabilityStatus: check.reachabilityStatus,
         lastCheckedAt: checkedAt,
         check
       };
@@ -211,12 +289,13 @@ async function updateDomains() {
     lastUpdatedAt: checkedAt,
     summary: {
       checked: checkedDomains.length,
-      reachable: countWhere(checkedDomains, (domain) => domain.check?.ok),
-      unreachable: countWhere(checkedDomains, (domain) => !domain.check?.ok),
-      activeExpected: countWhere(checkedDomains, (domain) => domain.isActive !== false),
+      reachable: countWhere(checkedDomains, isReachable),
+      unreachable: countWhere(checkedDomains, isUnreachable),
+      unknown: countWhere(checkedDomains, isUnknownReachability),
+      activeExpected: countWhere(checkedDomains, isActiveDomain),
       activeButUnreachable: countWhere(
         checkedDomains,
-        (domain) => domain.isActive !== false && !domain.check?.ok
+        (domain) => isActiveDomain(domain) && isUnreachable(domain)
       )
     },
     domains: checkedDomains
@@ -299,6 +378,43 @@ function parseFeed(xml, limit = 5) {
     .filter((item) => item.title || item.url);
 }
 
+async function fetchGitHubActivityItems(username, limit = 5) {
+  const events = await fetchGitHubApi(`/users/${encodeURIComponent(username)}/events/public?per_page=${limit}`);
+  return Array.isArray(events)
+    ? events.slice(0, limit).map((event) => {
+        const summary = summarizeGitHubEvent(event);
+        return {
+          title: summary.summary,
+          url: summary.url,
+          publishedAt: summary.createdAt
+        };
+      })
+    : [];
+}
+
+async function fetchStackExchangeTimelineItems(profile, limit = 5) {
+  const url = new URL(
+    `https://api.stackexchange.com/2.3/users/${encodeURIComponent(profile.stackExchangeUserId)}/timeline`
+  );
+  url.searchParams.set("site", profile.stackExchangeSite);
+  url.searchParams.set("pagesize", String(limit));
+
+  if (process.env.STACK_EXCHANGE_KEY) {
+    url.searchParams.set("key", process.env.STACK_EXCHANGE_KEY);
+  }
+
+  const data = await fetchJson(url.toString(), {
+    headers: { Accept: "application/json" },
+    timeoutMs: 20000
+  });
+
+  return (data.items || []).slice(0, limit).map((item) => ({
+    title: item.title || `${item.timeline_type || "Activity"} on ${profile.name}`,
+    url: item.link || profile.url,
+    publishedAt: item.creation_date ? new Date(item.creation_date * 1000).toISOString() : null
+  }));
+}
+
 async function updateSocialMedia() {
   const data = await readJson("social-media.json", { profiles: [], recentUpdates: [] });
   const profiles = Array.isArray(data.profiles) ? data.profiles : [];
@@ -306,12 +422,30 @@ async function updateSocialMedia() {
   const checkedProfiles = await Promise.all(
     profiles.map(async (profile) => {
       const url = normalizeUrl(profile.url);
-      const check = await checkUrl(url);
+      const check = await checkUrl(url, { preferGet: true, timeoutMs: 20000 });
       let latestItems = Array.isArray(profile.latestItems) ? profile.latestItems : [];
       let feedStatus = profile.feedUrl ? "pending" : "not-configured";
       let feedError = null;
 
-      if (profile.feedUrl) {
+      if (profile.activitySource === "github-events") {
+        try {
+          latestItems = await fetchGitHubActivityItems(profile.githubUsername || "tbm0115", 5);
+          feedStatus = "ok";
+        } catch (error) {
+          feedStatus = "error";
+          feedError = error.message;
+        }
+      } else if (profile.activitySource === "stackexchange-timeline") {
+        try {
+          latestItems = await fetchStackExchangeTimelineItems(profile, 5);
+          feedStatus = "ok";
+        } catch (error) {
+          feedStatus = "error";
+          feedError = error.message;
+        }
+      }
+
+      if ((!latestItems || latestItems.length === 0) && profile.feedUrl) {
         try {
           const feedXml = await fetchText(profile.feedUrl, {
             headers: {
@@ -330,6 +464,7 @@ async function updateSocialMedia() {
         ...profile,
         url,
         isReachable: check.ok,
+        reachabilityStatus: check.reachabilityStatus,
         lastCheckedAt: checkedAt,
         check,
         feedStatus,
@@ -357,8 +492,9 @@ async function updateSocialMedia() {
     lastUpdatedAt: checkedAt,
     summary: {
       checked: checkedProfiles.length,
-      reachable: countWhere(checkedProfiles, (profile) => profile.check?.ok),
-      unreachable: countWhere(checkedProfiles, (profile) => !profile.check?.ok),
+      reachable: countWhere(checkedProfiles, isReachable),
+      unreachable: countWhere(checkedProfiles, isUnreachable),
+      unknown: countWhere(checkedProfiles, isUnknownReachability),
       feedsChecked: countWhere(checkedProfiles, (profile) => profile.feedStatus === "ok"),
       feedErrors: countWhere(checkedProfiles, (profile) => profile.feedStatus === "error")
     },
@@ -412,6 +548,14 @@ function eventTypeLabel(type) {
   return type.replace(/Event$/, "").replace(/([a-z])([A-Z])/g, "$1 $2");
 }
 
+function actionLabel(action) {
+  if (!action) {
+    return "Updated";
+  }
+
+  return `${action.charAt(0).toUpperCase()}${action.slice(1)}`;
+}
+
 function summarizeGitHubEvent(event) {
   const payload = event.payload || {};
   const repoName = event.repo?.name || null;
@@ -421,20 +565,26 @@ function summarizeGitHubEvent(event) {
   if (event.type === "PushEvent") {
     const commitCount = Array.isArray(payload.commits) ? payload.commits.length : 0;
     const branch = payload.ref ? payload.ref.split("/").pop() : "a branch";
-    summary = `Pushed ${commitCount} commit${commitCount === 1 ? "" : "s"} to ${branch}`;
+    summary =
+      commitCount > 0
+        ? `Pushed ${commitCount} commit${commitCount === 1 ? "" : "s"} to ${branch}`
+        : `Updated ${branch}`;
   } else if (event.type === "CreateEvent") {
     summary = `Created ${payload.ref_type || "resource"}${payload.ref ? ` ${payload.ref}` : ""}`;
+  } else if (event.type === "DeleteEvent") {
+    summary = `Deleted ${payload.ref_type || "resource"}${payload.ref ? ` ${payload.ref}` : ""}`;
   } else if (event.type === "PullRequestEvent" && payload.pull_request) {
-    summary = `${payload.action || "Updated"} PR #${payload.pull_request.number}: ${payload.pull_request.title}`;
+    const title = payload.pull_request.title || repoName || "pull request";
+    summary = `${actionLabel(payload.action)} PR #${payload.pull_request.number}: ${title}`;
     url = payload.pull_request.html_url || url;
   } else if (event.type === "IssuesEvent" && payload.issue) {
-    summary = `${payload.action || "Updated"} issue #${payload.issue.number}: ${payload.issue.title}`;
+    summary = `${actionLabel(payload.action)} issue #${payload.issue.number}: ${payload.issue.title}`;
     url = payload.issue.html_url || url;
   } else if (event.type === "IssueCommentEvent" && payload.comment) {
-    summary = `${payload.action || "Updated"} an issue comment`;
+    summary = `${actionLabel(payload.action)} an issue comment`;
     url = payload.comment.html_url || url;
   } else if (event.type === "ReleaseEvent" && payload.release) {
-    summary = `${payload.action || "Updated"} release ${payload.release.name || payload.release.tag_name}`;
+    summary = `${actionLabel(payload.action)} release ${payload.release.name || payload.release.tag_name}`;
     url = payload.release.html_url || url;
   } else if (event.type === "WatchEvent") {
     summary = "Starred a repository";
@@ -449,6 +599,31 @@ function summarizeGitHubEvent(event) {
     summary,
     url,
     createdAt: event.created_at
+  };
+}
+
+function repoPreviewUrl(repo, checkedAtValue) {
+  const fullName = repo.full_name || `${repo.owner?.login || "tbm0115"}/${repo.name}`;
+  const [owner, name] = fullName.split("/");
+  const cacheKey = String(repo.updated_at || checkedAtValue).replace(/[^0-9A-Za-z]/g, "") || "latest";
+
+  return `https://opengraph.githubassets.com/${cacheKey}/${encodeURIComponent(owner)}/${encodeURIComponent(name)}`;
+}
+
+function latestActivityForRepo(repo, events) {
+  const fullName = repo.full_name || `${repo.owner?.login || "tbm0115"}/${repo.name}`;
+  const latestEvent = events.find((event) => event.repo?.toLowerCase() === fullName.toLowerCase());
+
+  if (latestEvent) {
+    return latestEvent;
+  }
+
+  return {
+    type: "Repository",
+    repo: fullName,
+    summary: `Repository updated ${repo.pushed_at ? "from a recent push" : "recently"}`,
+    url: repo.html_url,
+    createdAt: repo.pushed_at || repo.updated_at
   };
 }
 
@@ -486,6 +661,8 @@ async function updateDevelopment() {
       fetchAllGitHubPages(`/users/${encodeURIComponent(username)}/repos?per_page=100&sort=updated&type=owner`),
       fetchGitHubApi(`/users/${encodeURIComponent(username)}/events/public?per_page=30`)
     ]);
+    const latestPublicEvents = Array.isArray(events) ? events.slice(0, 10).map(summarizeGitHubEvent) : [];
+    const eventPool = Array.isArray(events) ? events.map(summarizeGitHubEvent) : [];
 
     return {
       ...existing,
@@ -503,14 +680,19 @@ async function updateDevelopment() {
       topLanguages: languageSummary(repos),
       recentRepositories: repos.slice(0, 8).map((repo) => ({
         name: repo.name,
+        fullName: repo.full_name || `${username}/${repo.name}`,
         description: repo.description,
         url: repo.html_url,
+        homepageUrl: repo.homepage || null,
+        socialPreviewUrl: repoPreviewUrl(repo, checkedAt),
         language: repo.language,
         stars: repo.stargazers_count || 0,
         forks: repo.forks_count || 0,
-        updatedAt: repo.updated_at
+        updatedAt: repo.updated_at,
+        pushedAt: repo.pushed_at || null,
+        latestActivity: latestActivityForRepo(repo, eventPool)
       })),
-      latestPublicEvents: Array.isArray(events) ? events.slice(0, 10).map(summarizeGitHubEvent) : [],
+      latestPublicEvents,
       error: null
     };
   } catch (error) {
