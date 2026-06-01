@@ -1,15 +1,202 @@
 {
-  "lastUpdatedAt": null,
-  "status": "pending",
+  "lastUpdatedAt": "2026-06-01T18:17:05.569Z",
+  "status": "ok",
   "githubUsername": "tbm0115",
   "summary": {
-    "publicRepos": 0,
-    "followers": 0,
-    "following": 0,
-    "totalStars": 0,
-    "totalForks": 0
+    "publicRepos": 36,
+    "followers": 16,
+    "following": 9,
+    "totalStars": 19,
+    "totalForks": 11
   },
-  "topLanguages": [],
-  "recentRepositories": [],
-  "latestPublicEvents": []
+  "topLanguages": [
+    {
+      "language": "C#",
+      "repositories": 9,
+      "stars": 11
+    },
+    {
+      "language": "Visual Basic",
+      "repositories": 6,
+      "stars": 0
+    },
+    {
+      "language": "JavaScript",
+      "repositories": 5,
+      "stars": 7
+    },
+    {
+      "language": "HTML",
+      "repositories": 5,
+      "stars": 1
+    },
+    {
+      "language": "CSS",
+      "repositories": 1,
+      "stars": 0
+    },
+    {
+      "language": "Groovy",
+      "repositories": 1,
+      "stars": 0
+    },
+    {
+      "language": "SCSS",
+      "repositories": 1,
+      "stars": 0
+    },
+    {
+      "language": "TypeScript",
+      "repositories": 1,
+      "stars": 0
+    }
+  ],
+  "recentRepositories": [
+    {
+      "name": "tbm0115.github.io",
+      "description": "Personal site",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-01T18:14:48Z"
+    },
+    {
+      "name": "ThinkComposer",
+      "description": "The Visual Thinking tool for Understand Problems, Design Solutions and Express Knowledge.",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "language": "C#",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-05-29T18:00:07Z"
+    },
+    {
+      "name": "YouTube-Music-Mini-Player",
+      "description": "An Electron.js wrapper for the YouTube Music PWA with better media controls",
+      "url": "https://github.com/tbm0115/YouTube-Music-Mini-Player",
+      "language": "JavaScript",
+      "stars": 2,
+      "forks": 1,
+      "updatedAt": "2026-05-23T14:09:51Z"
+    },
+    {
+      "name": "Consoul",
+      "description": "Console interface extensions",
+      "url": "https://github.com/tbm0115/Consoul",
+      "language": "C#",
+      "stars": 3,
+      "forks": 1,
+      "updatedAt": "2026-04-12T15:50:25Z"
+    },
+    {
+      "name": "LaserPeckerSettings",
+      "description": "Collection of LaserPecker setting guides",
+      "url": "https://github.com/tbm0115/LaserPeckerSettings",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-03-11T18:22:39Z"
+    },
+    {
+      "name": "FlashLive",
+      "description": "A helper library for accessing the FlashLive API for sports on RapidAPI.",
+      "url": "https://github.com/tbm0115/FlashLive",
+      "language": "C#",
+      "stars": 2,
+      "forks": 1,
+      "updatedAt": "2026-02-16T20:19:22Z"
+    },
+    {
+      "name": "Path-Structure",
+      "description": "A Windows folder/file formatting/audit tool",
+      "url": "https://github.com/tbm0115/Path-Structure",
+      "language": "Visual Basic",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-01-25T22:04:29Z"
+    },
+    {
+      "name": "Sticky-Notes-Grid",
+      "description": "A static HTML page for printing directly onto sticky notes",
+      "url": "https://github.com/tbm0115/Sticky-Notes-Grid",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2025-11-07T15:44:18Z"
+    }
+  ],
+  "latestPublicEvents": [
+    {
+      "type": "Push",
+      "repo": "tbm0115/tbm0115.github.io",
+      "summary": "Pushed 0 commits to master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "createdAt": "2026-06-01T18:14:45Z"
+    },
+    {
+      "type": "Push",
+      "repo": "tbm0115/tbm0115.github.io",
+      "summary": "Pushed 0 commits to master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "createdAt": "2026-06-01T17:42:49Z"
+    },
+    {
+      "type": "Create",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Created branch bug/CompositionJsonImport",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T20:05:21Z"
+    },
+    {
+      "type": "Push",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Pushed 0 commits to master",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:59:36Z"
+    },
+    {
+      "type": "Delete",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Delete",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:41:56Z"
+    },
+    {
+      "type": "Push",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Pushed 0 commits to master",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:41:54Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "merged PR #4: undefined",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:41:52Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "opened PR #4: undefined",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:41:36Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "labeled PR #4: undefined",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:41:36Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "assigned PR #4: undefined",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-05-29T17:41:36Z"
+    }
+  ],
+  "profileUrl": "https://github.com/tbm0115",
+  "error": null
 }

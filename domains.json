@@ -1,50 +1,147 @@
 {
-  "lastUpdatedAt": null,
+  "lastUpdatedAt": "2026-06-01T18:17:05.569Z",
   "summary": {
-    "checked": 0,
-    "reachable": 0,
-    "unreachable": 0
+    "checked": 8,
+    "reachable": 1,
+    "unreachable": 7,
+    "activeExpected": 6,
+    "activeButUnreachable": 5
   },
   "domains": [
     {
       "base": "consoul.dev",
       "isActive": true,
-      "description": "Project site for Consoul"
+      "description": "Project site for Consoul",
+      "url": "https://consoul.dev",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://consoul.dev",
+        "responseTimeMs": 10554,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "fetch failed"
+      }
     },
     {
       "base": "recipedia.lightworks.app",
       "isActive": true,
-      "description": "Recipedia PWA"
+      "description": "Recipedia PWA",
+      "url": "https://recipedia.lightworks.app",
+      "isReachable": true,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": true,
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://recipedia.lightworks.app/",
+        "responseTimeMs": 6630,
+        "checkedAt": "2026-06-01T18:17:05.569Z"
+      }
     },
     {
       "base": "mtconnect.wiki",
       "isActive": true,
-      "description": "Forwards to http://mtcup.org"
+      "description": "Forwards to http://mtcup.org",
+      "url": "https://mtconnect.wiki",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://mtconnect.wiki",
+        "responseTimeMs": 15001,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "Request timed out"
+      }
     },
     {
       "base": "offthewallcreations.xyz",
       "isActive": false,
-      "description": "Off the Wall Creations square website"
+      "description": "Off the Wall Creations square website",
+      "url": "https://offthewallcreations.xyz",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://offthewallcreations.xyz",
+        "responseTimeMs": 10491,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "fetch failed"
+      }
     },
     {
       "base": "otwc.xyz",
       "isActive": false,
-      "description": "Off the Wall Creations square website short link"
+      "description": "Off the Wall Creations square website short link",
+      "url": "https://otwc.xyz",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://otwc.xyz",
+        "responseTimeMs": 10490,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "fetch failed"
+      }
     },
     {
       "base": "traismcallister.info",
       "isActive": true,
-      "description": "Forwards to traismcallister.me"
+      "description": "Forwards to traismcallister.me",
+      "url": "https://traismcallister.info",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://traismcallister.info",
+        "responseTimeMs": 10489,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "fetch failed"
+      }
     },
     {
       "base": "traismcallister.me",
       "isActive": true,
-      "description": "Aggregate for my online presence"
+      "description": "Aggregate for my online presence",
+      "url": "https://traismcallister.me",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://traismcallister.me",
+        "responseTimeMs": 10489,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "fetch failed"
+      }
     },
     {
       "base": "utilities.games",
       "isActive": true,
-      "description": "PWA for hosting random video game reference data and tools"
+      "description": "PWA for hosting random video game reference data and tools",
+      "url": "https://utilities.games",
+      "isReachable": false,
+      "lastCheckedAt": "2026-06-01T18:17:05.569Z",
+      "check": {
+        "ok": false,
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://utilities.games",
+        "responseTimeMs": 10488,
+        "checkedAt": "2026-06-01T18:17:05.569Z",
+        "error": "fetch failed"
+      }
     }
   ]
 }
