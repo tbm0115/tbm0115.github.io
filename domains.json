@@ -176,6 +176,111 @@
         "responseTimeMs": 1524,
         "checkedAt": "2026-06-01T19:57:59.679Z"
       }
+    },
+    {
+      "name": "Circuit Breaker Panel App",
+      "base": "switchpanel.traismcallister.me",
+      "isActive": true,
+      "status": "active",
+      "description": "PWA to manage labels for circuit breaker panels",
+      "url": "https://switchpanel.traismcallister.me/",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T19:57:59.679Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://switchpanel.traismcallister.me/",
+        "responseTimeMs": 1524,
+        "checkedAt": "2026-06-01T19:57:59.679Z"
+      }
+    },
+    {
+      "name": "Sticky Notes Grid App",
+      "base": "traismcallister.me/Sticky-Notes-Grid",
+      "isActive": true,
+      "status": "active",
+      "description": "Single Page app to use inkjet printer on sticky notes.",
+      "url": "https://traismcallister.me/Sticky-Notes-Grid",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T19:57:59.679Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://traismcallister.me/Sticky-Notes-Grid",
+        "responseTimeMs": 1524,
+        "checkedAt": "2026-06-01T19:57:59.679Z"
+      }
+    },
+    {
+      "name": "Catering Label Template",
+      "base": "traismcallister.me/Catering-Label-Template",
+      "isActive": true,
+      "status": "active",
+      "description": "Single Page app to use inkjet printer to print cut-out catering labels for parties.",
+      "url": "https://traismcallister.me/Catering-Label-Template",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T19:57:59.679Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://traismcallister.me/Catering-Label-Template",
+        "responseTimeMs": 1524,
+        "checkedAt": "2026-06-01T19:57:59.679Z"
+      }
+    },
+    {
+      "name": "Laser Batcher",
+      "base": "batcher.offthewallcreations.xyz",
+      "isActive": true,
+      "status": "active",
+      "description": "Single page web app for platting SVG files for laser operations",
+      "url": "https://batcher.offthewallcreations.xyz/",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T19:57:59.679Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://batcher.offthewallcreations.xyz/",
+        "responseTimeMs": 1524,
+        "checkedAt": "2026-06-01T19:57:59.679Z"
+      }
+    },
+    {
+      "name": "Lattice Hinge Calculator",
+      "base": "lattice.offthewallcreations.xyz",
+      "isActive": true,
+      "status": "active",
+      "description": "Online tool for creating compliant hinges",
+      "url": "https://lattice.offthewallcreations.xyz/",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T19:57:59.679Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://lattice.offthewallcreations.xyz/",
+        "responseTimeMs": 1524,
+        "checkedAt": "2026-06-01T19:57:59.679Z"
+      }
     }
   ]
 }
