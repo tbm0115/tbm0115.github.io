@@ -363,6 +363,26 @@ a:hover,
   background: var(--surface-soft);
 }
 
+.presence-card__media--fallback {
+  display: grid;
+  min-height: 11rem;
+  place-items: center;
+  padding: 1.2rem;
+  background:
+    linear-gradient(135deg, var(--accent-soft), transparent 58%),
+    var(--surface-soft);
+  text-decoration: none;
+}
+
+.presence-card__media--fallback span {
+  color: var(--heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
 .presence-card__media img {
   display: block;
   width: 100%;

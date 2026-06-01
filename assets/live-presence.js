@@ -147,25 +147,12 @@
     return "Active";
   }
 
-  function splitRepoUrl(url) {
-    const match = /^https:\/\/github\.com\/([^/]+)\/([^/#?]+)/i.exec(url || "");
-    return match ? { owner: match[1], name: match[2] } : null;
-  }
-
   function githubPreviewUrl(repo) {
-    if (repo.socialPreviewUrl) {
-      return repo.socialPreviewUrl;
+    if (repo.localPreviewUrl) {
+      return repo.localPreviewUrl;
     }
 
-    const fromUrl = splitRepoUrl(repo.url);
-    const fullName = repo.fullName || (fromUrl ? `${fromUrl.owner}/${fromUrl.name}` : "");
-    const [owner, name] = fullName.split("/");
-    if (!owner || !name) {
-      return "";
-    }
-
-    const cacheKey = String(repo.updatedAt || repo.pushedAt || "latest").replace(/[^0-9A-Za-z]/g, "") || "latest";
-    return `https://opengraph.githubassets.com/${cacheKey}/${owner}/${name}`;
+    return "";
   }
 
   function activityForRepo(repo, events) {
@@ -173,7 +160,7 @@
       return repo.latestActivity;
     }
 
-    const fullName = repo.fullName || splitRepoUrl(repo.url)?.name || repo.name;
+    const fullName = repo.fullName || repo.name;
     const event = (events || []).find((item) => {
       return item.repo && fullName && item.repo.toLowerCase().endsWith(String(fullName).toLowerCase());
     });
@@ -298,7 +285,7 @@
             ${
               previewUrl
                 ? `<a class="presence-card__media" href="${escapeText(repo.url)}" aria-label="${escapeText(repo.name)} repository"><img src="${escapeText(previewUrl)}" alt="" loading="lazy"></a>`
-                : ""
+                : `<a class="presence-card__media presence-card__media--fallback" href="${escapeText(repo.url)}" aria-label="${escapeText(repo.name)} repository"><span>${escapeText(repo.name)}</span></a>`
             }
             <div class="presence-card__body">
               <h3><a href="${escapeText(repo.url)}">${escapeText(repo.name)}</a></h3>

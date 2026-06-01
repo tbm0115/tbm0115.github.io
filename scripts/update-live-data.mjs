@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { existsSync } from "node:fs";
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,6 +17,8 @@ const dataFiles = [
   "development.json",
   "search-results.json"
 ];
+
+const previewDirectory = "assets/repo-previews";
 
 function filePath(fileName) {
   return path.join(repoRoot, fileName);
@@ -41,6 +43,17 @@ async function writeJson(fileName, value) {
   }
 
   await writeFile(filePath(fileName), content, "utf8");
+  console.log(`Updated ${fileName}`);
+}
+
+async function writeBinary(fileName, value) {
+  if (dryRun) {
+    console.log(`[dry-run] Would write ${fileName}`);
+    return;
+  }
+
+  await mkdir(path.dirname(filePath(fileName)), { recursive: true });
+  await writeFile(filePath(fileName), value);
   console.log(`Updated ${fileName}`);
 }
 
@@ -610,6 +623,62 @@ function repoPreviewUrl(repo, checkedAtValue) {
   return `https://opengraph.githubassets.com/${cacheKey}/${encodeURIComponent(owner)}/${encodeURIComponent(name)}`;
 }
 
+function repoPreviewFileName(repo) {
+  const fullName = repo.full_name || `${repo.owner?.login || "tbm0115"}/${repo.name}`;
+  const slug = fullName
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+  return `${previewDirectory}/${slug || repo.name}.png`;
+}
+
+async function cacheRepoPreview(repo, sourceUrl) {
+  const localPath = repoPreviewFileName(repo);
+
+  if (existsSync(filePath(localPath))) {
+    return {
+      localPreviewUrl: localPath,
+      previewStatus: "cached"
+    };
+  }
+
+  try {
+    const response = await fetchWithTimeout(
+      sourceUrl,
+      {
+        method: "GET",
+        headers: requestHeaders({
+          Accept: "image/avif,image/webp,image/png,image/*;q=0.8,*/*;q=0.5"
+        })
+      },
+      20000
+    );
+
+    const contentType = response.headers.get("content-type") || "";
+    if (!response.ok || !contentType.startsWith("image/")) {
+      return {
+        localPreviewUrl: null,
+        previewStatus: "unavailable",
+        previewError: `${response.status} ${response.statusText}`
+      };
+    }
+
+    await writeBinary(localPath, Buffer.from(await response.arrayBuffer()));
+
+    return {
+      localPreviewUrl: localPath,
+      previewStatus: "cached"
+    };
+  } catch (error) {
+    return {
+      localPreviewUrl: null,
+      previewStatus: "unavailable",
+      previewError: requestErrorMessage(error)
+    };
+  }
+}
+
 function latestActivityForRepo(repo, events) {
   const fullName = repo.full_name || `${repo.owner?.login || "tbm0115"}/${repo.name}`;
   const latestEvent = events.find((event) => event.repo?.toLowerCase() === fullName.toLowerCase());
@@ -664,6 +733,31 @@ async function updateDevelopment() {
     const latestPublicEvents = Array.isArray(events) ? events.slice(0, 10).map(summarizeGitHubEvent) : [];
     const eventPool = Array.isArray(events) ? events.map(summarizeGitHubEvent) : [];
 
+    const recentRepositories = await Promise.all(
+      repos.slice(0, 8).map(async (repo) => {
+        const socialPreviewSourceUrl = repoPreviewUrl(repo, checkedAt);
+        const preview = await cacheRepoPreview(repo, socialPreviewSourceUrl);
+
+        return {
+          name: repo.name,
+          fullName: repo.full_name || `${username}/${repo.name}`,
+          description: repo.description,
+          url: repo.html_url,
+          homepageUrl: repo.homepage || null,
+          socialPreviewSourceUrl,
+          localPreviewUrl: preview.localPreviewUrl,
+          previewStatus: preview.previewStatus,
+          ...(preview.previewError ? { previewError: preview.previewError } : {}),
+          language: repo.language,
+          stars: repo.stargazers_count || 0,
+          forks: repo.forks_count || 0,
+          updatedAt: repo.updated_at,
+          pushedAt: repo.pushed_at || null,
+          latestActivity: latestActivityForRepo(repo, eventPool)
+        };
+      })
+    );
+
     return {
       ...existing,
       lastUpdatedAt: checkedAt,
@@ -678,20 +772,7 @@ async function updateDevelopment() {
         totalForks: repos.reduce((sum, repo) => sum + (repo.forks_count || 0), 0)
       },
       topLanguages: languageSummary(repos),
-      recentRepositories: repos.slice(0, 8).map((repo) => ({
-        name: repo.name,
-        fullName: repo.full_name || `${username}/${repo.name}`,
-        description: repo.description,
-        url: repo.html_url,
-        homepageUrl: repo.homepage || null,
-        socialPreviewUrl: repoPreviewUrl(repo, checkedAt),
-        language: repo.language,
-        stars: repo.stargazers_count || 0,
-        forks: repo.forks_count || 0,
-        updatedAt: repo.updated_at,
-        pushedAt: repo.pushed_at || null,
-        latestActivity: latestActivityForRepo(repo, eventPool)
-      })),
+      recentRepositories,
       latestPublicEvents,
       error: null
     };
