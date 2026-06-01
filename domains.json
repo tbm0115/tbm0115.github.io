@@ -1,0 +1,44 @@
+{
+  "domains": [
+    {
+      "base": "consoul.dev",
+      "isActive": true,
+      "description": ""
+    },
+    {
+      "base": "recipedia.lightworks.app"
+      "isActive": true,
+      "description": "Recipedia PWA"
+    },
+    {
+      "base": "mtconnect.wiki",
+      "isActive": true,
+      "description": "Forwards to http://mtcup.org"
+    },
+    {
+      "base": "offthewallcreations.xyz",
+      "isActive": false,
+      "description": "Off the Wall Creations square website"
+    },
+    {
+      "base": "otwc.xyz",
+      "isActive": false,
+      "description": "Off the Wall Creations square website short link"
+    },
+    {
+      "base": "traismcallister.info",
+      "isActive": true,
+      "description": "Forwards to traismcallister.me"
+    },
+    {
+      "base": "traismcallister.me",
+      "isActive": true,
+      "description": "Aggregate for my online presence"
+    },
+    {
+      "base": "utilities.games",
+      "isActive": true,
+      "description": "PWA for hosting random video game reference data and tools"
+    }
+  ]
+}
