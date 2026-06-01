@@ -1,5 +1,66 @@
 # My Online Presence
 
+<link rel="stylesheet" href="./assets/live-presence.css">
+
+<section class="presence-live" aria-labelledby="live-presence-heading">
+  <div class="presence-live__heading">
+    <div>
+      <h2 id="live-presence-heading">Live Public Signals</h2>
+      <p>Automatically refreshed snapshots from public sources.</p>
+    </div>
+    <span class="presence-live__stamp" data-live-field="last-updated">Loading...</span>
+  </div>
+
+  <div class="presence-live__grid">
+    <article class="presence-panel">
+      <span class="presence-panel__label">Domains</span>
+      <strong data-live-field="domains-summary">Loading...</strong>
+      <span data-live-field="domains-detail">Checking reachability data.</span>
+    </article>
+
+    <article class="presence-panel">
+      <span class="presence-panel__label">Profiles</span>
+      <strong data-live-field="social-summary">Loading...</strong>
+      <span data-live-field="social-detail">Checking public profile data.</span>
+    </article>
+
+    <article class="presence-panel">
+      <span class="presence-panel__label">Development</span>
+      <strong data-live-field="development-summary">Loading...</strong>
+      <span data-live-field="development-detail">Checking GitHub activity data.</span>
+    </article>
+
+    <article class="presence-panel">
+      <span class="presence-panel__label">Search</span>
+      <strong data-live-field="search-summary">Loading...</strong>
+      <span data-live-field="search-detail">Checking search result data.</span>
+    </article>
+  </div>
+
+  <div class="presence-live__columns">
+    <section>
+      <h3>Recent Public Updates</h3>
+      <ul class="presence-list" data-live-list="updates">
+        <li>Loading...</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Latest GitHub Activity</h3>
+      <ul class="presence-list" data-live-list="github-events">
+        <li>Loading...</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Name Search Snapshot</h3>
+      <ul class="presence-list" data-live-list="search-results">
+        <li>Loading...</li>
+      </ul>
+    </section>
+  </div>
+</section>
+
 # Sponsored Open Source Projects
 
 
@@ -50,3 +111,5 @@ Do you like my work or need additional support? Become a [GitHub Developer Spons
 | [samanthamcallister.me]() | No | Placeholder |
 | [tabletopexpress.games]() | No | Placeholder |
 | [tams.app]() | No | Placeholder |
+
+<script src="./assets/live-presence.js" defer></script>

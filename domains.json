@@ -1,12 +1,18 @@
 {
+  "lastUpdatedAt": null,
+  "summary": {
+    "checked": 0,
+    "reachable": 0,
+    "unreachable": 0
+  },
   "domains": [
     {
       "base": "consoul.dev",
       "isActive": true,
-      "description": ""
+      "description": "Project site for Consoul"
     },
     {
-      "base": "recipedia.lightworks.app"
+      "base": "recipedia.lightworks.app",
       "isActive": true,
       "description": "Recipedia PWA"
     },

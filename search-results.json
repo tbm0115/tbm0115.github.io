@@ -1,0 +1,8 @@
+{
+  "lastUpdatedAt": null,
+  "status": "pending",
+  "provider": "none",
+  "query": "\"Trais McAllister\" OR \"tbm0115\"",
+  "topResults": [],
+  "note": "Set BRAVE_SEARCH_API_KEY, SERPAPI_KEY, or BING_SEARCH_API_KEY in repository secrets to refresh search results."
+}
