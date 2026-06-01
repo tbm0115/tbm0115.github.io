@@ -1,11 +1,11 @@
 {
-  "lastUpdatedAt": null,
+  "lastUpdatedAt": "2026-06-01T18:35:15.653Z",
   "summary": {
-    "checked": 0,
-    "reachable": 0,
-    "unreachable": 0,
-    "unknown": 0,
-    "activeExpected": 0,
+    "checked": 23,
+    "reachable": 8,
+    "unreachable": 2,
+    "unknown": 13,
+    "activeExpected": 7,
     "activeButUnreachable": 0
   },
   "domains": [
@@ -14,161 +14,496 @@
       "base": "lightworkstm.com",
       "isActive": false,
       "status": "inactive",
-      "description": "LightWorks Cost of Living Calculator"
+      "description": "LightWorks Cost of Living Calculator",
+      "url": "https://lightworkstm.com",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Site Not Found",
+        "finalUrl": "http://lightworkstm.com/",
+        "responseTimeMs": 2441,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "Utilities.games",
       "base": "utilities.games",
       "isActive": true,
       "status": "in-development",
-      "description": "Custom video game utilities and reference tools"
+      "description": "Custom video game utilities and reference tools",
+      "url": "https://utilities.games",
+      "statusLabel": "In development",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://utilities.games/",
+        "responseTimeMs": 361,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "MTConnect.app",
       "base": "mtconnect.app",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://mtconnect.app",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://mtconnect.app",
+        "responseTimeMs": 2495,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "Consoul.dev",
       "base": "consoul.dev",
       "isActive": true,
       "status": "active",
-      "description": "Project site for Consoul"
+      "description": "Project site for Consoul",
+      "url": "https://consoul.dev",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://consoul.dev/",
+        "responseTimeMs": 418,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "IIoT.wiki",
       "base": "iiot.wiki",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://iiot.wiki",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://iiot.wiki",
+        "responseTimeMs": 2903,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "LightWorks.app",
       "base": "lightworks.app",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://lightworks.app",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://lightworks.app",
+        "responseTimeMs": 2477,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "Recipedia",
       "base": "recipedia.lightworks.app",
       "isActive": true,
       "status": "active",
-      "description": "Recipedia PWA"
+      "description": "Recipedia PWA",
+      "url": "https://recipedia.lightworks.app",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://recipedia.lightworks.app/",
+        "responseTimeMs": 678,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "LightWorksTM.net",
       "base": "lightworkstm.net",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://lightworkstm.net",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://lightworkstm.net",
+        "responseTimeMs": 2572,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "MakerBot.dev",
       "base": "makerbot.dev",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://makerbot.dev",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://makerbot.dev",
+        "responseTimeMs": 2606,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "MTConnect.wiki",
       "base": "mtconnect.wiki",
       "isActive": true,
       "status": "active",
-      "description": "Forwards to http://mtcup.org"
+      "description": "Forwards to http://mtcup.org",
+      "url": "https://mtconnect.wiki",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://mtcup.org/",
+        "responseTimeMs": 2419,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "TraisMcAllister.info",
       "base": "traismcallister.info",
       "isActive": true,
       "status": "active",
-      "description": "Forwards to traismcallister.me"
+      "description": "Forwards to traismcallister.me",
+      "url": "https://traismcallister.info",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://traismcallister.me/",
+        "responseTimeMs": 2202,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "TraisMcAllister.me",
       "base": "traismcallister.me",
       "isActive": true,
       "status": "active",
-      "description": "Aggregate for my online presence"
+      "description": "Aggregate for my online presence",
+      "url": "https://traismcallister.me",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://traismcallister.me/",
+        "responseTimeMs": 894,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "amaterialworld.biz",
       "base": "amaterialworld.biz",
       "isActive": true,
       "status": "active",
-      "description": "Craft site"
+      "description": "Craft site",
+      "url": "https://amaterialworld.biz",
+      "statusLabel": "Active",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://amaterialworld.biz",
+        "responseTimeMs": 2657,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "amaterialworld.us",
       "base": "amaterialworld.us",
       "isActive": false,
       "status": "inactive",
-      "description": "Deprecated craft site"
+      "description": "Deprecated craft site",
+      "url": "https://amaterialworld.us",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://amaterialworld.us",
+        "responseTimeMs": 2614,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "minutemen.dev",
       "base": "minutemen.dev",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://minutemen.dev",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://minutemen.dev",
+        "responseTimeMs": 2686,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "garbage.news",
       "base": "garbage.news",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://garbage.news",
+      "statusLabel": "Inactive",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://garbage.news/",
+        "responseTimeMs": 1131,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "mobilizedmanufacturing.com",
       "base": "mobilizedmanufacturing.com",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://mobilizedmanufacturing.com",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://mobilizedmanufacturing.com",
+        "responseTimeMs": 2732,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "mobilizedmfg.com",
       "base": "mobilizedmfg.com",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://mobilizedmfg.com",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://mobilizedmfg.com",
+        "responseTimeMs": 2779,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "samanthamcallister.me",
       "base": "samanthamcallister.me",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://samanthamcallister.me",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://samanthamcallister.me",
+        "responseTimeMs": 2876,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "tabletopexpress.games",
       "base": "tabletopexpress.games",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://tabletopexpress.games",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://tabletopexpress.games",
+        "responseTimeMs": 2925,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "tams.app",
       "base": "tams.app",
       "isActive": false,
       "status": "inactive",
-      "description": "Placeholder"
+      "description": "Placeholder",
+      "url": "https://tams.app",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": null,
+        "statusText": "Request failed",
+        "finalUrl": "https://tams.app",
+        "responseTimeMs": 3012,
+        "checkedAt": "2026-06-01T18:35:15.653Z",
+        "error": "fetch failed"
+      }
     },
     {
       "name": "Off the Wall Creations",
       "base": "offthewallcreations.xyz",
       "isActive": false,
       "status": "inactive",
-      "description": "Off the Wall Creations Square site"
+      "description": "Off the Wall Creations Square site",
+      "url": "https://offthewallcreations.xyz",
+      "statusLabel": "Inactive",
+      "isReachable": false,
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Not Found",
+        "finalUrl": "http://www.offthewallcreations.xyz/",
+        "responseTimeMs": 3697,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     },
     {
       "name": "OTWC short link",
       "base": "otwc.xyz",
       "isActive": false,
       "status": "inactive",
-      "description": "Off the Wall Creations short link"
+      "description": "Off the Wall Creations short link",
+      "url": "https://otwc.xyz",
+      "statusLabel": "Inactive",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "http://www.otwc.xyz/",
+        "responseTimeMs": 4008,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      }
     }
   ]
 }

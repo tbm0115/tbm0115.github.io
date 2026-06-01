@@ -1,11 +1,11 @@
 {
-  "lastUpdatedAt": null,
+  "lastUpdatedAt": "2026-06-01T18:35:15.653Z",
   "summary": {
-    "checked": 0,
-    "reachable": 0,
-    "unreachable": 0,
-    "unknown": 0,
-    "feedsChecked": 0,
+    "checked": 9,
+    "reachable": 5,
+    "unreachable": 2,
+    "unknown": 2,
+    "feedsChecked": 4,
     "feedErrors": 0
   },
   "profiles": [
@@ -16,13 +16,67 @@
       "url": "https://github.com/tbm0115",
       "activitySource": "github-events",
       "githubUsername": "tbm0115",
-      "feedUrl": "https://github.com/tbm0115.atom"
+      "feedUrl": "https://github.com/tbm0115.atom",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://github.com/tbm0115",
+        "responseTimeMs": 410,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "ok",
+      "latestItems": [
+        {
+          "title": "Updated master",
+          "url": "https://github.com/tbm0115/tbm0115.github.io",
+          "publishedAt": "2026-06-01T18:34:51Z"
+        },
+        {
+          "title": "Updated master",
+          "url": "https://github.com/tbm0115/tbm0115.github.io",
+          "publishedAt": "2026-06-01T18:14:45Z"
+        },
+        {
+          "title": "Updated master",
+          "url": "https://github.com/tbm0115/tbm0115.github.io",
+          "publishedAt": "2026-06-01T17:42:49Z"
+        },
+        {
+          "title": "Created branch bug/CompositionJsonImport",
+          "url": "https://github.com/tbm0115/ThinkComposer",
+          "publishedAt": "2026-05-29T20:05:21Z"
+        },
+        {
+          "title": "Updated master",
+          "url": "https://github.com/tbm0115/ThinkComposer",
+          "publishedAt": "2026-05-29T17:59:36Z"
+        }
+      ]
     },
     {
       "name": "CodePen",
       "category": "Software",
       "type": "Contributor",
-      "url": "https://codepen.io/tbm0115"
+      "url": "https://codepen.io/tbm0115",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": 403,
+        "statusText": "Forbidden",
+        "finalUrl": "https://codepen.io/tbm0115",
+        "responseTimeMs": 119,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "not-configured",
+      "latestItems": []
     },
     {
       "name": "Stack Overflow",
@@ -31,7 +85,47 @@
       "url": "https://stackoverflow.com/users/story/4585104",
       "activitySource": "stackexchange-timeline",
       "stackExchangeSite": "stackoverflow",
-      "stackExchangeUserId": 4585104
+      "stackExchangeUserId": 4585104,
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://stackoverflow.com/users/story/4585104",
+        "responseTimeMs": 151,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "ok",
+      "latestItems": [
+        {
+          "title": "badge on Stack Overflow",
+          "url": "https://stackoverflow.com/users/story/4585104",
+          "publishedAt": "2024-03-08T20:06:00.000Z"
+        },
+        {
+          "title": "Drawing a 3-Point Arc VB.NET",
+          "url": "https://stackoverflow.com/users/story/4585104",
+          "publishedAt": "2023-07-08T23:19:47.000Z"
+        },
+        {
+          "title": "badge on Stack Overflow",
+          "url": "https://stackoverflow.com/users/story/4585104",
+          "publishedAt": "2023-05-08T18:43:31.000Z"
+        },
+        {
+          "title": "Image not displaying after deployment",
+          "url": "https://stackoverflow.com/users/story/4585104",
+          "publishedAt": "2023-04-17T13:09:20.000Z"
+        },
+        {
+          "title": "How to change each line of texts color using css",
+          "url": "https://stackoverflow.com/users/story/4585104",
+          "publishedAt": "2022-07-21T06:36:03.000Z"
+        }
+      ]
     },
     {
       "name": "Stack Exchange - 3D Printing",
@@ -40,7 +134,47 @@
       "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
       "activitySource": "stackexchange-timeline",
       "stackExchangeSite": "3dprinting",
-      "stackExchangeUserId": 98
+      "stackExchangeUserId": 98,
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+        "responseTimeMs": 333,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "ok",
+      "latestItems": [
+        {
+          "title": "badge on Stack Exchange - 3D Printing",
+          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+          "publishedAt": "2026-01-12T22:01:20.000Z"
+        },
+        {
+          "title": "What filament material is safe to use as in-wall housing (US)?",
+          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+          "publishedAt": "2025-11-20T11:53:00.000Z"
+        },
+        {
+          "title": "badge on Stack Exchange - 3D Printing",
+          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+          "publishedAt": "2025-01-12T21:56:55.000Z"
+        },
+        {
+          "title": "What is the MightyBoard 1280 IO used for?",
+          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+          "publishedAt": "2024-08-18T20:26:55.000Z"
+        },
+        {
+          "title": "badge on Stack Exchange - 3D Printing",
+          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+          "publishedAt": "2024-01-12T21:42:25.000Z"
+        }
+      ]
     },
     {
       "name": "Stack Exchange - Internet of Things",
@@ -49,32 +183,199 @@
       "url": "https://iot.stackexchange.com/users/16/tbm0115",
       "activitySource": "stackexchange-timeline",
       "stackExchangeSite": "iot",
-      "stackExchangeUserId": 16
+      "stackExchangeUserId": 16,
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
+        "responseTimeMs": 343,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "ok",
+      "latestItems": [
+        {
+          "title": "badge on Stack Exchange - Internet of Things",
+          "url": "https://iot.stackexchange.com/users/16/tbm0115",
+          "publishedAt": "2025-12-06T18:43:00.000Z"
+        },
+        {
+          "title": "badge on Stack Exchange - Internet of Things",
+          "url": "https://iot.stackexchange.com/users/16/tbm0115",
+          "publishedAt": "2024-12-06T17:52:20.000Z"
+        },
+        {
+          "title": "How can I monitor movement of subterranean wall?",
+          "url": "https://iot.stackexchange.com/users/16/tbm0115",
+          "publishedAt": "2024-10-02T14:37:17.000Z"
+        },
+        {
+          "title": "How can I monitor movement of subterranean wall?",
+          "url": "https://iot.stackexchange.com/users/16/tbm0115",
+          "publishedAt": "2024-10-01T17:22:32.000Z"
+        },
+        {
+          "title": "How can I monitor movement of subterranean wall?",
+          "url": "https://iot.stackexchange.com/users/16/tbm0115",
+          "publishedAt": "2024-10-01T14:53:39.000Z"
+        }
+      ]
     },
     {
       "name": "LinkedIn",
       "category": "Software",
       "type": "Member",
-      "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/"
+      "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
+      "isReachable": false,
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Not Found",
+        "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
+        "responseTimeMs": 295,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "not-configured",
+      "latestItems": []
     },
     {
       "name": "Thingiverse",
       "category": "3D Printing",
       "type": "Contributor",
-      "url": "https://www.thingiverse.com/tbm0115/about"
+      "url": "https://www.thingiverse.com/tbm0115/about",
+      "isReachable": false,
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Not Found",
+        "finalUrl": "https://www.thingiverse.com/tbm0115/about",
+        "responseTimeMs": 337,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "not-configured",
+      "latestItems": []
     },
     {
       "name": "MakeXYZ",
       "category": "3D Printing",
       "type": "Vendor",
-      "url": "https://www.makexyz.com/store/maker/tbm0115"
+      "url": "https://www.makexyz.com/store/maker/tbm0115",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
+        "responseTimeMs": 499,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "not-configured",
+      "latestItems": []
     },
     {
       "name": "GrabCAD",
       "category": "3D Printing",
       "type": "Contributor",
-      "url": "https://grabcad.com/trais.mcallister-1/"
+      "url": "https://grabcad.com/trais.mcallister-1/",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-01T18:35:15.653Z",
+      "check": {
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": 403,
+        "statusText": "Forbidden",
+        "finalUrl": "https://grabcad.com/trais.mcallister-1/",
+        "responseTimeMs": 320,
+        "checkedAt": "2026-06-01T18:35:15.653Z"
+      },
+      "feedStatus": "not-configured",
+      "latestItems": []
     }
   ],
-  "recentUpdates": []
+  "recentUpdates": [
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "publishedAt": "2026-06-01T18:34:51Z"
+    },
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "publishedAt": "2026-06-01T18:14:45Z"
+    },
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "publishedAt": "2026-06-01T17:42:49Z"
+    },
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Created branch bug/CompositionJsonImport",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "publishedAt": "2026-05-29T20:05:21Z"
+    },
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated master",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "publishedAt": "2026-05-29T17:59:36Z"
+    },
+    {
+      "source": "Stack Exchange - 3D Printing",
+      "sourceUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "title": "badge on Stack Exchange - 3D Printing",
+      "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "publishedAt": "2026-01-12T22:01:20.000Z"
+    },
+    {
+      "source": "Stack Exchange - Internet of Things",
+      "sourceUrl": "https://iot.stackexchange.com/users/16/tbm0115",
+      "title": "badge on Stack Exchange - Internet of Things",
+      "url": "https://iot.stackexchange.com/users/16/tbm0115",
+      "publishedAt": "2025-12-06T18:43:00.000Z"
+    },
+    {
+      "source": "Stack Exchange - 3D Printing",
+      "sourceUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "title": "What filament material is safe to use as in-wall housing (US)?",
+      "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "publishedAt": "2025-11-20T11:53:00.000Z"
+    },
+    {
+      "source": "Stack Exchange - 3D Printing",
+      "sourceUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "title": "badge on Stack Exchange - 3D Printing",
+      "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "publishedAt": "2025-01-12T21:56:55.000Z"
+    },
+    {
+      "source": "Stack Exchange - Internet of Things",
+      "sourceUrl": "https://iot.stackexchange.com/users/16/tbm0115",
+      "title": "badge on Stack Exchange - Internet of Things",
+      "url": "https://iot.stackexchange.com/users/16/tbm0115",
+      "publishedAt": "2024-12-06T17:52:20.000Z"
+    }
+  ]
 }
