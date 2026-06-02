@@ -1,10 +1,10 @@
 {
-  "lastUpdatedAt": "2026-06-01T23:32:49.485Z",
+  "lastUpdatedAt": "2026-06-02T00:51:20.551Z",
   "summary": {
     "checked": 9,
     "reachable": 5,
-    "unreachable": 1,
-    "unknown": 3,
+    "unreachable": 2,
+    "unknown": 2,
     "feedsChecked": 4,
     "feedErrors": 0
   },
@@ -19,18 +19,23 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 385,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 347,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "ok",
       "latestItems": [
+        {
+          "title": "Updated master",
+          "url": "https://github.com/tbm0115/tbm0115.github.io",
+          "publishedAt": "2026-06-02T00:50:50Z"
+        },
         {
           "title": "Updated master",
           "url": "https://github.com/tbm0115/tbm0115.github.io",
@@ -50,11 +55,6 @@
           "title": "Updated master",
           "url": "https://github.com/tbm0115/tbm0115.github.io",
           "publishedAt": "2026-06-01T18:34:51Z"
-        },
-        {
-          "title": "Updated master",
-          "url": "https://github.com/tbm0115/tbm0115.github.io",
-          "publishedAt": "2026-06-01T18:14:45Z"
         }
       ]
     },
@@ -65,15 +65,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 59,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 29,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -88,15 +88,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 60,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 86,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -137,15 +137,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 156,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 183,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -186,15 +186,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 150,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 165,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -232,15 +232,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
-        "responseTimeMs": 141,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 140,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -251,16 +251,16 @@
       "type": "Contributor",
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 429,
-        "statusText": "Too Many Requests",
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 93,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 142,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -272,15 +272,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 238,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 345,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -292,21 +292,28 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-01T23:32:49.485Z",
+      "lastCheckedAt": "2026-06-02T00:51:20.551Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 199,
-        "checkedAt": "2026-06-01T23:32:49.485Z"
+        "responseTimeMs": 85,
+        "checkedAt": "2026-06-02T00:51:20.551Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
     }
   ],
   "recentUpdates": [
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "publishedAt": "2026-06-02T00:50:50Z"
+    },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
@@ -334,13 +341,6 @@
       "title": "Updated master",
       "url": "https://github.com/tbm0115/tbm0115.github.io",
       "publishedAt": "2026-06-01T18:34:51Z"
-    },
-    {
-      "source": "GitHub",
-      "sourceUrl": "https://github.com/tbm0115",
-      "title": "Updated master",
-      "url": "https://github.com/tbm0115/tbm0115.github.io",
-      "publishedAt": "2026-06-01T18:14:45Z"
     },
     {
       "source": "Stack Exchange - 3D Printing",
