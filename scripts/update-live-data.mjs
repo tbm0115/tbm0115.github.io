@@ -748,9 +748,13 @@ async function updateDevelopment() {
           localPreviewUrl: preview.localPreviewUrl,
           previewStatus: preview.previewStatus,
           ...(preview.previewError ? { previewError: preview.previewError } : {}),
+          archived: repo.archived || false,
+          fork: repo.fork || false,
+          topics: Array.isArray(repo.topics) ? repo.topics : [],
           language: repo.language,
           stars: repo.stargazers_count || 0,
           forks: repo.forks_count || 0,
+          openIssues: repo.open_issues_count || 0,
           updatedAt: repo.updated_at,
           pushedAt: repo.pushed_at || null,
           latestActivity: latestActivityForRepo(repo, eventPool)

@@ -228,7 +228,9 @@ a:hover,
 
 .presence-actions a:focus-visible,
 .presence-card a:focus-visible,
-.presence-profile-card:focus-visible,
+.presence-profile-card a:focus-visible,
+.presence-summary-link:focus-visible,
+.presence-filter-chip:focus-visible,
 .presence-search-box input:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
@@ -259,7 +261,7 @@ a:hover,
 
 .presence-stat-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
   gap: 0.85rem;
 }
 
@@ -309,6 +311,38 @@ a:hover,
   gap: 1rem;
 }
 
+.presence-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0.85rem;
+}
+
+.presence-summary-link {
+  display: grid;
+  min-height: 8.2rem;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-raised);
+  text-decoration: none;
+}
+
+.presence-summary-link strong {
+  color: var(--heading);
+  font-size: 1.05rem;
+}
+
+.presence-summary-link span {
+  color: var(--accent-strong);
+  font-weight: 850;
+}
+
+.presence-summary-link small {
+  color: var(--text-muted);
+}
+
 .presence-chip-list,
 .presence-profile-grid,
 .presence-search-grid {
@@ -337,15 +371,19 @@ a:hover,
 }
 
 .presence-profile-card {
-  display: grid;
+  display: block;
   min-width: min(100%, 12rem);
-  grid-template-columns: 2.4rem minmax(0, 1fr);
-  gap: 0.2rem 0.65rem;
-  align-items: center;
   padding: 0.75rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface-raised);
+}
+
+.presence-profile-card > a {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  gap: 0.2rem 0.65rem;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -373,11 +411,28 @@ a:hover,
   color: var(--text-muted);
 }
 
+.presence-group {
+  margin-bottom: 1.2rem;
+}
+
+.presence-group h3 {
+  margin: 0 0 0.6rem;
+}
+
 .presence-empty {
   margin: 0;
   padding: 1rem;
   border: 1px dashed var(--border-strong);
   border-radius: 8px;
+  color: var(--text-muted) !important;
+}
+
+.presence-skeleton {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--surface-soft), var(--surface), var(--surface-soft));
   color: var(--text-muted) !important;
 }
 
@@ -388,6 +443,24 @@ a:hover,
   font-weight: 800;
 }
 
+.presence-filter-chip {
+  min-height: 2.25rem;
+  padding: 0 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 750;
+}
+
+.presence-filter-chip.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--heading);
+}
+
 .presence-search-box {
   display: grid;
   gap: 0.25rem;
@@ -395,6 +468,38 @@ a:hover,
   color: var(--text-muted);
   font-size: 0.85rem;
   font-weight: 750;
+}
+
+.presence-detail-list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  list-style: none;
+}
+
+.presence-detail-list li {
+  color: var(--text-muted) !important;
+}
+
+.presence-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.presence-card__links a {
+  font-weight: 800;
+}
+
+code {
+  padding: 0.08rem 0.25rem;
+  border-radius: 4px;
+  background: var(--surface-soft);
+  color: var(--heading);
 }
 
 .presence-search-box input {

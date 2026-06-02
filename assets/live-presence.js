@@ -8,12 +8,15 @@
     const devSummary = development.summary || {};
     const domainSummary = domains.summary || {};
     const socialSummary = social.summary || {};
+    const managedDomains = U.asArray(domains.domains).length;
 
     U.setHtml("[data-dashboard-stats]", [
-      U.statCard("Public repos", U.number(devSummary.publicRepos), `${U.number(devSummary.totalStars)} stars across recent repos`),
-      U.statCard("Active domains", U.number(domainSummary.activeExpected), `${U.number(domainSummary.reachable)} reachable in last check`),
-      U.statCard("Profiles", U.asArray(social.profiles).length, `${U.number(socialSummary.feedsChecked)} activity sources refreshed`),
-      U.statCard("Discovery", U.asArray(search.topResults).length, search.status === "ok" ? search.provider : "Search provider not configured")
+      U.statCard("Public repos", U.number(devSummary.publicRepos), "visible on GitHub"),
+      U.statCard("Stars", U.number(devSummary.totalStars), "across recent repos"),
+      U.statCard("Forks", U.number(devSummary.totalForks), "across recent repos"),
+      U.statCard("Managed domains", managedDomains || U.number(domainSummary.checked), `${U.number(domainSummary.activeExpected)} active expected`),
+      U.statCard("Reachable domains", U.number(domainSummary.reachable), `${U.number(domainSummary.unreachable)} offline`),
+      U.statCard("Reachable profiles", U.number(socialSummary.reachable), `${U.number(socialSummary.unknown)} inconclusive`)
     ].join(""));
   }
 
@@ -25,15 +28,39 @@
       data.social?.lastUpdatedAt,
       data.search?.lastUpdatedAt
     ]);
-    const repoCount = U.number(data.development?.summary?.publicRepos);
-    const activeDomains = U.number(data.domains?.summary?.activeExpected);
-    const profileCount = U.asArray(data.social?.profiles).length;
-
-    U.setText(
-      "[data-dashboard-summary]",
-      `${repoCount} public repositories, ${activeDomains} active or in-development domains, and ${profileCount} public profiles are summarized from generated JSON.`
-    );
+    U.setText("[data-dashboard-summary]", U.generatedProfessionalSummary(data));
     U.setText("[data-dashboard-updated]", `Last refresh: ${U.formatDate(updatedAt)}`);
+  }
+
+  function summaryCard(title, href, value, detail) {
+    const U = window.PresenceData;
+    return `
+      <a class="presence-summary-link" href="${href}">
+        <strong>${U.escapeHtml(title)}</strong>
+        <span>${U.escapeHtml(value)}</span>
+        <small>${U.escapeHtml(detail)}</small>
+      </a>
+    `;
+  }
+
+  function renderRouteCards(data) {
+    const U = window.PresenceData;
+    const projects = U.asArray(data.development?.recentRepositories);
+    const events = U.asArray(data.development?.latestPublicEvents);
+    const domains = U.asArray(data.domains?.domains);
+    const profiles = U.asArray(data.social?.profiles);
+    const searchResults = U.asArray(data.search?.topResults);
+
+    U.setHtml(
+      "[data-route-summary-cards]",
+      [
+        summaryCard("Projects", "/projects/", `${projects.length} recent repos`, "Browse portfolio-style project cards."),
+        summaryCard("Domains", "/domains/", `${domains.length} managed domains`, `${U.number(data.domains?.summary?.reachable)} reachable in last check.`),
+        summaryCard("Profiles", "/profiles/", `${profiles.length} public profiles`, `${U.number(data.social?.summary?.feedsChecked)} activity sources refreshed.`),
+        summaryCard("Development", "/development/", `${events.length} recent events`, "GitHub metrics, languages, and activity."),
+        summaryCard("Discovery", "/discovery/", `${searchResults.length} search results`, data.search?.status === "ok" ? data.search.provider : "Search provider optional.")
+      ].join("")
+    );
   }
 
   function renderFeaturedProjects(data) {
@@ -127,25 +154,14 @@
       return;
     }
 
-    U.setHtml(
-      "[data-search-cards]",
-      results
-        .map(
-          (result) => `
-            <article class="presence-card presence-card--search">
-              <h3><a href="${U.safeUrl(result.url)}">${U.escapeHtml(result.title || "Search result")}</a></h3>
-              <p>${U.escapeHtml(result.snippet || result.url || "")}</p>
-            </article>
-          `
-        )
-        .join("")
-    );
+    U.setHtml("[data-search-cards]", results.map((result) => U.searchResultCard(result, data.search?.provider)).join(""));
   }
 
   async function init() {
     const data = await window.PresenceData.loadAllData();
     renderHero(data);
     renderStats(data);
+    renderRouteCards(data);
     renderFeaturedProjects(data);
     renderActivity(data);
     renderLanguages(data);

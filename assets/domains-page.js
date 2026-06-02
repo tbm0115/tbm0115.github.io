@@ -30,8 +30,10 @@
       [
         U.statCard("Tracked", U.number(summary.checked) || domains.length, "managed domains"),
         U.statCard("Reachable", U.number(summary.reachable), "responded successfully"),
-        U.statCard("Offline", U.number(summary.unreachable), "returned offline or error status"),
-        U.statCard("Unknown", U.number(summary.unknown), "blocked or inconclusive checks")
+        U.statCard("Unreachable", U.number(summary.unreachable), "offline or error status"),
+        U.statCard("Unknown", U.number(summary.unknown), "blocked or inconclusive checks"),
+        U.statCard("Active expected", U.number(summary.activeExpected), "active or in development"),
+        U.statCard("Active issues", U.number(summary.activeButUnreachable), "active but unreachable")
       ].join("")
     );
   }
@@ -42,7 +44,7 @@
     U.setHtml(
       "[data-domain-list]",
       visible.length
-        ? visible.map((domain) => U.domainCard(domain)).join("")
+        ? visible.map((domain) => U.domainCard(domain, { showDetails: true })).join("")
         : U.renderEmpty("No domains match the current filter.")
     );
   }

@@ -1,4 +1,6 @@
 ---
+title: Managed Domains
+description: Managed domain inventory and reachability checks generated from domains.json.
 permalink: /domains/
 ---
 
@@ -20,10 +22,10 @@ permalink: /domains/
   <section class="presence-section" aria-labelledby="domain-summary-heading">
     <div class="presence-section__heading">
       <h2 id="domain-summary-heading">Summary</h2>
-      <span data-domains-updated>Loading refresh time...</span>
+      <span data-domains-updated>Refresh data pending</span>
     </div>
     <div class="presence-stat-grid" data-domain-page-summary>
-      <p>Loading domain summary...</p>
+      <p class="presence-skeleton">Preparing domain summary.</p>
     </div>
   </section>
 
@@ -36,7 +38,7 @@ permalink: /domains/
       </label>
     </div>
     <div class="presence-card-grid presence-card-grid--sites" data-domain-list>
-      <p>Loading domains...</p>
+      <p class="presence-skeleton">Preparing domains.</p>
     </div>
   </section>
 </section>

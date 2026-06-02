@@ -1,3 +1,8 @@
+---
+title: Trais McAllister
+description: A self-maintaining dashboard for Trais McAllister's public development work, profiles, domains, and discovery signals.
+---
+
 # Trais McAllister
 
 <link rel="stylesheet" href="/assets/live-presence.css">
@@ -6,32 +11,43 @@
   <section class="presence-hero">
     <p class="presence-kicker">Public presence dashboard</p>
     <h2 id="dashboard-heading">A live snapshot of my software work, public profiles, managed domains, and discoverability.</h2>
-    <p data-dashboard-summary>Loading the latest public signal data...</p>
+    <p data-dashboard-summary>Preparing the latest public signal summary.</p>
     <nav class="presence-actions" aria-label="Dashboard pages">
+      <a href="/projects/">Projects</a>
       <a href="/development/">Development</a>
       <a href="/domains/">Domains</a>
+      <a href="/profiles/">Profiles</a>
+      <a href="/discovery/">Discovery</a>
       <a href="https://github.com/tbm0115">GitHub</a>
-      <a href="https://github.com/sponsors/tbm0115">Sponsor</a>
     </nav>
   </section>
 
   <section class="presence-section" aria-labelledby="stats-heading">
     <div class="presence-section__heading">
       <h2 id="stats-heading">At A Glance</h2>
-      <span data-dashboard-updated>Loading refresh time...</span>
+      <span data-dashboard-updated>Refresh data pending</span>
     </div>
     <div class="presence-stat-grid" data-dashboard-stats>
-      <p>Loading statistics...</p>
+      <p class="presence-skeleton">Preparing statistics.</p>
     </div>
   </section>
 
   <section class="presence-section" aria-labelledby="featured-projects-heading">
     <div class="presence-section__heading">
       <h2 id="featured-projects-heading">Active Development</h2>
-      <a href="/development/">View all projects</a>
+      <a href="/projects/">View projects</a>
     </div>
     <div class="presence-card-grid presence-card-grid--repos" data-featured-projects>
-      <p>Loading featured projects...</p>
+      <p class="presence-skeleton">Preparing featured projects.</p>
+    </div>
+  </section>
+
+  <section class="presence-section" aria-labelledby="sections-heading">
+    <div class="presence-section__heading">
+      <h2 id="sections-heading">Explore</h2>
+    </div>
+    <div class="presence-summary-grid" data-route-summary-cards>
+      <p class="presence-skeleton">Preparing dashboard sections.</p>
     </div>
   </section>
 
@@ -41,7 +57,7 @@
         <h2 id="activity-heading">Recent Activity</h2>
       </div>
       <ul class="presence-list" data-recent-activity>
-        <li>Loading activity...</li>
+        <li>Preparing activity.</li>
       </ul>
     </section>
 
@@ -50,7 +66,7 @@
         <h2 id="languages-heading">Technologies</h2>
       </div>
       <div class="presence-chip-list" data-language-highlights>
-        <p>Loading language highlights...</p>
+        <p class="presence-skeleton">Preparing language highlights.</p>
       </div>
     </section>
   </div>
@@ -62,16 +78,17 @@
         <a href="/domains/">Open domains page</a>
       </div>
       <div data-domains-summary-card>
-        <p>Loading domain summary...</p>
+        <p class="presence-skeleton">Preparing domain summary.</p>
       </div>
     </section>
 
     <section class="presence-section" aria-labelledby="profiles-heading">
       <div class="presence-section__heading">
         <h2 id="profiles-heading">Profiles</h2>
+        <a href="/profiles/">Open profiles page</a>
       </div>
       <div class="presence-profile-grid" data-profile-cards>
-        <p>Loading profiles...</p>
+        <p class="presence-skeleton">Preparing profiles.</p>
       </div>
     </section>
   </div>
@@ -79,9 +96,10 @@
   <section class="presence-section" aria-labelledby="discovery-heading">
     <div class="presence-section__heading">
       <h2 id="discovery-heading">Discovery</h2>
+      <a href="/discovery/">Open discovery page</a>
     </div>
     <div class="presence-search-grid" data-search-cards>
-      <p>Loading search snapshot...</p>
+      <p class="presence-skeleton">Preparing search snapshot.</p>
     </div>
   </section>
 </section>

@@ -1,4 +1,6 @@
 ---
+title: Development
+description: GitHub development metrics, languages, recent repositories, and public activity.
 permalink: /development/
 ---
 
@@ -10,9 +12,10 @@ permalink: /development/
   <section class="presence-hero presence-hero--compact">
     <p class="presence-kicker">Public development activity</p>
     <h2 id="development-page-heading">Projects, recent activity, and technology highlights.</h2>
-    <p>Generated from <code>development.json</code>. Featured projects are scored from metadata instead of manually curated.</p>
+    <p>Generated from <code>development.json</code>. This page focuses on metrics and activity; project browsing lives on the Projects page.</p>
     <nav class="presence-actions" aria-label="Site navigation">
       <a href="/">Dashboard</a>
+      <a href="/projects/">Projects</a>
       <a href="/domains/">Domains</a>
       <a href="https://github.com/tbm0115">GitHub</a>
     </nav>
@@ -21,10 +24,10 @@ permalink: /development/
   <section class="presence-section" aria-labelledby="development-summary-heading">
     <div class="presence-section__heading">
       <h2 id="development-summary-heading">Summary</h2>
-      <span data-development-updated>Loading refresh time...</span>
+      <span data-development-updated>Refresh data pending</span>
     </div>
     <div class="presence-stat-grid" data-development-page-summary>
-      <p>Loading development summary...</p>
+      <p class="presence-skeleton">Preparing development summary.</p>
     </div>
   </section>
 
@@ -34,7 +37,7 @@ permalink: /development/
         <h2 id="development-languages-heading">Languages</h2>
       </div>
       <div class="presence-chip-list" data-development-languages>
-        <p>Loading languages...</p>
+        <p class="presence-skeleton">Preparing languages.</p>
       </div>
     </section>
 
@@ -43,22 +46,28 @@ permalink: /development/
         <h2 id="development-categories-heading">Project Categories</h2>
       </div>
       <div class="presence-chip-list" data-development-categories>
-        <p>Loading categories...</p>
+        <p class="presence-skeleton">Preparing categories.</p>
       </div>
     </section>
   </div>
 
-  <section class="presence-section" aria-labelledby="project-list-heading">
+  <section class="presence-section" aria-labelledby="recent-repositories-heading">
     <div class="presence-section__heading">
-      <h2 id="project-list-heading">Projects</h2>
-      <label class="presence-search-box">
-        <span>Filter projects</span>
-        <input type="search" data-project-filter placeholder="Filter by name, language, category, or activity">
-      </label>
+      <h2 id="recent-repositories-heading">Recent Repositories</h2>
+      <a href="/projects/">Browse project cards</a>
     </div>
-    <div class="presence-card-grid presence-card-grid--repos" data-project-list>
-      <p>Loading projects...</p>
+    <ul class="presence-list" data-development-repositories>
+      <li>Preparing repositories.</li>
+    </ul>
+  </section>
+
+  <section class="presence-section" aria-labelledby="public-events-heading">
+    <div class="presence-section__heading">
+      <h2 id="public-events-heading">Latest Public Events</h2>
     </div>
+    <ul class="presence-list" data-development-events>
+      <li>Preparing public events.</li>
+    </ul>
   </section>
 </section>
 

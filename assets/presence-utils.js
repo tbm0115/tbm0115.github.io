@@ -40,6 +40,10 @@
     return `/${value.replace(/^\.?\//, "")}`;
   }
 
+  function uniqueValues(values) {
+    return [...new Set(asArray(values).filter(Boolean))];
+  }
+
   function setText(selector, value) {
     const target = document.querySelector(selector);
     if (target) {
@@ -158,6 +162,19 @@
     return "Unknown";
   }
 
+  function profileReachabilityLabel(profile) {
+    const status = profile?.reachabilityStatus || profile?.check?.reachabilityStatus;
+    if (status === "reachable" || profile?.isReachable === true) {
+      return "Reachable";
+    }
+
+    if (status === "unreachable") {
+      return "Unavailable";
+    }
+
+    return "Check inconclusive";
+  }
+
   function domainStatusLabel(domain) {
     if (domain?.statusLabel) {
       return domain.statusLabel;
@@ -214,6 +231,12 @@
     };
   }
 
+  function isPagesRepository(repo) {
+    const name = String(repo?.name || "").toLowerCase();
+    const fullName = String(repo?.fullName || "").toLowerCase();
+    return name.endsWith(".github.io") || fullName.endsWith(".github.io");
+  }
+
   function projectCategory(repo) {
     const text = `${repo?.name || ""} ${repo?.description || ""} ${asArray(repo?.topics).join(" ")}`.toLowerCase();
     const language = String(repo?.language || "").toLowerCase();
@@ -242,6 +265,9 @@
   }
 
   function projectScore(repo) {
+    // Small, transparent heuristic for a self-maintaining homepage:
+    // favor fresh, described, useful projects with activity and public signals;
+    // down-rank archives, forks, stale metadata, and the Pages repo itself.
     let score = 0;
     const days = ageInDays(repo?.pushedAt || repo?.updatedAt);
 
@@ -251,6 +277,10 @@
 
     if (repo?.fork) {
       score -= 20;
+    }
+
+    if (isPagesRepository(repo)) {
+      score -= 28;
     }
 
     if (days <= 14) {
@@ -265,6 +295,8 @@
 
     if (repo?.description) {
       score += 12;
+    } else {
+      score -= 8;
     }
 
     if (repo?.homepageUrl) {
@@ -297,9 +329,10 @@
   }
 
   function featuredProjects(development, limit = 5) {
-    return sortedProjects(development)
-      .filter((repo) => !repo?.archived && (!repo?.fork || repo?.description))
-      .slice(0, limit);
+    const eligible = sortedProjects(development).filter((repo) => !repo?.archived && (!repo?.fork || repo?.description));
+    const nonPages = eligible.filter((repo) => !isPagesRepository(repo));
+
+    return (nonPages.length >= 3 ? nonPages : eligible).slice(0, limit);
   }
 
   function categorySummary(repos) {
@@ -344,15 +377,25 @@
             <a href="${safeUrl(activity.url || repo?.url)}">${escapeHtml(activity.summary || "Recent repository activity")}</a>
             ${activity.createdAt ? `<small>${escapeHtml(compactDate(activity.createdAt))}</small>` : ""}
           </div>
+          <div class="presence-card__links">
+            <a href="${safeUrl(repo?.url)}">GitHub</a>
+            ${repo?.homepageUrl ? `<a href="${safeUrl(repo.homepageUrl)}">Homepage</a>` : ""}
+          </div>
         </div>
       </article>
     `;
   }
 
-  function domainCard(domain) {
+  function domainCard(domain, options = {}) {
     const reachability = domain?.reachabilityStatus || domain?.check?.reachabilityStatus || "unknown";
     const url = safeUrl(domain?.url || `https://${domain?.base || ""}`);
     const statusText = `${domainStatusLabel(domain)} - ${reachabilityLabel(domain)}`;
+    const check = domain?.check || {};
+    const details = [
+      check.finalUrl ? `Final URL: ${check.finalUrl}` : "",
+      check.responseTimeMs ? `Response: ${check.responseTimeMs} ms` : "",
+      domain?.lastCheckedAt ? `Checked: ${compactDate(domain.lastCheckedAt)}` : ""
+    ].filter(Boolean);
 
     return `
       <article class="presence-card presence-card--site">
@@ -362,21 +405,70 @@
         <h3><a href="${url}">${escapeHtml(domain?.name || domain?.base || "Domain")}</a></h3>
         <p>${escapeHtml(domain?.description || "Managed domain")}</p>
         <small>${escapeHtml(domain?.base || domain?.url || "")}</small>
+        ${options.showDetails && details.length ? `<ul class="presence-detail-list">${details.map((detail) => `<li>${escapeHtml(detail)}</li>`).join("")}</ul>` : ""}
       </article>
     `;
   }
 
-  function profileCard(profile) {
+  function profileCard(profile, options = {}) {
     const reachability = profile?.reachabilityStatus || profile?.check?.reachabilityStatus || "unknown";
     const initial = String(profile?.name || "?").trim().charAt(0).toUpperCase() || "?";
+    const latestItems = asArray(profile?.latestItems).slice(0, options.latestItems || 0);
 
     return `
-      <a class="presence-profile-card" href="${safeUrl(profile?.url)}">
-        <span aria-hidden="true">${escapeHtml(initial)}</span>
-        <strong>${escapeHtml(profile?.name || "Profile")}</strong>
-        <small>${escapeHtml([profile?.category, profile?.type, reachabilityLabel(profile)].filter(Boolean).join(" - "))}</small>
-      </a>
+      <article class="presence-profile-card">
+        <a href="${safeUrl(profile?.url)}">
+          <span aria-hidden="true">${escapeHtml(initial)}</span>
+          <strong>${escapeHtml(profile?.name || "Profile")}</strong>
+          <small>${escapeHtml([profile?.category, profile?.type, profileReachabilityLabel(profile)].filter(Boolean).join(" - "))}</small>
+        </a>
+        ${
+          latestItems.length
+            ? `<ul class="presence-detail-list">${latestItems
+                .map(
+                  (item) => `<li><a href="${safeUrl(item.url || profile?.url)}">${escapeHtml(item.title || "Recent item")}</a>${item.publishedAt ? ` <small>${escapeHtml(compactDate(item.publishedAt))}</small>` : ""}</li>`
+                )
+                .join("")}</ul>`
+            : ""
+        }
+      </article>
     `;
+  }
+
+  function searchResultCard(result, provider) {
+    return `
+      <article class="presence-card presence-card--search">
+        <h3><a href="${safeUrl(result?.url)}">${escapeHtml(result?.title || "Search result")}</a></h3>
+        <p>${escapeHtml(result?.snippet || result?.url || "")}</p>
+        <small>${escapeHtml([provider, result?.publishedAt].filter(Boolean).join(" - "))}</small>
+      </article>
+    `;
+  }
+
+  function generatedProfessionalSummary(data) {
+    const development = data?.development || {};
+    const domains = data?.domains || {};
+    const social = data?.social || {};
+    const repos = asArray(development.recentRepositories);
+    const languages = asArray(development.topLanguages)
+      .slice(0, 4)
+      .map((item) => item.language)
+      .filter(Boolean);
+    const categories = categorySummary(repos).slice(0, 2).map((item) => item.category.toLowerCase());
+    const profileCategories = uniqueValues(asArray(social.profiles).map((profile) => profile.category)).slice(0, 2);
+    const focus = uniqueValues([
+      ...languages,
+      ...categories,
+      domains.summary?.activeExpected ? "practical web applications" : "",
+      development.summary?.publicRepos ? "open-source projects" : "",
+      ...profileCategories
+    ]).slice(0, 6);
+
+    if (!focus.length) {
+      return "Software developer maintaining public projects, profiles, and web properties from generated dashboard data.";
+    }
+
+    return `Software developer focused on ${focus.join(", ")}. This page summarizes public work, domains, profiles, and discovery signals from generated data.`;
   }
 
   window.PresenceData = {
@@ -390,17 +482,21 @@
     escapeHtml,
     featuredProjects,
     formatDate,
+    generatedProfessionalSummary,
+    isPagesRepository,
     loadAllData,
     loadJson,
     newestTimestamp,
     number,
     profileCard,
+    profileReachabilityLabel,
     projectCategory,
     projectScore,
     reachabilityLabel,
     renderEmpty,
     repoCard,
     safeUrl,
+    searchResultCard,
     setHtml,
     setText,
     sortedProjects,
