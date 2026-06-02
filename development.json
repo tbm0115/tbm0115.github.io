@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-06-02T01:27:05.900Z",
+  "lastUpdatedAt": "2026-06-02T01:50:29.892Z",
   "status": "ok",
   "githubUsername": "tbm0115",
   "summary": {
@@ -58,20 +58,24 @@
       "description": "Personal site",
       "url": "https://github.com/tbm0115/tbm0115.github.io",
       "homepageUrl": "https://traismcallister.me",
-      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260602T005133Z/tbm0115/tbm0115.github.io",
+      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260602T015025Z/tbm0115/tbm0115.github.io",
       "localPreviewUrl": "assets/repo-previews/tbm0115-tbm0115-github-io.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "updatedAt": "2026-06-02T00:51:33Z",
-      "pushedAt": "2026-06-02T00:51:29Z",
+      "openIssues": 0,
+      "updatedAt": "2026-06-02T01:50:25Z",
+      "pushedAt": "2026-06-02T01:50:09Z",
       "latestActivity": {
         "type": "Push",
         "repo": "tbm0115/tbm0115.github.io",
         "summary": "Updated master",
         "url": "https://github.com/tbm0115/tbm0115.github.io",
-        "createdAt": "2026-06-02T00:50:50Z"
+        "createdAt": "2026-06-02T01:50:10Z"
       }
     },
     {
@@ -83,9 +87,13 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260529T180007Z/tbm0115/ThinkComposer",
       "localPreviewUrl": "assets/repo-previews/tbm0115-thinkcomposer.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": true,
+      "topics": [],
       "language": "C#",
       "stars": 0,
       "forks": 0,
+      "openIssues": 0,
       "updatedAt": "2026-05-29T18:00:07Z",
       "pushedAt": "2026-05-29T20:05:21Z",
       "latestActivity": {
@@ -105,9 +113,15 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260523T140951Z/tbm0115/YouTube-Music-Mini-Player",
       "localPreviewUrl": "assets/repo-previews/tbm0115-youtube-music-mini-player.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [
+        "youtube-music-player"
+      ],
       "language": "JavaScript",
       "stars": 2,
       "forks": 1,
+      "openIssues": 0,
       "updatedAt": "2026-05-23T14:09:51Z",
       "pushedAt": "2026-05-23T14:09:35Z",
       "latestActivity": {
@@ -127,9 +141,15 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260412T155025Z/tbm0115/Consoul",
       "localPreviewUrl": "assets/repo-previews/tbm0115-consoul.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [
+        "console-visualization"
+      ],
       "language": "C#",
       "stars": 3,
       "forks": 1,
+      "openIssues": 4,
       "updatedAt": "2026-04-12T15:50:25Z",
       "pushedAt": "2026-04-12T15:50:20Z",
       "latestActivity": {
@@ -149,9 +169,13 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260311T182239Z/tbm0115/LaserPeckerSettings",
       "localPreviewUrl": "assets/repo-previews/tbm0115-laserpeckersettings.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
       "language": "HTML",
       "stars": 0,
       "forks": 0,
+      "openIssues": 0,
       "updatedAt": "2026-03-11T18:22:39Z",
       "pushedAt": "2026-03-11T18:22:36Z",
       "latestActivity": {
@@ -171,9 +195,13 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260216T201922Z/tbm0115/FlashLive",
       "localPreviewUrl": "assets/repo-previews/tbm0115-flashlive.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
       "language": "C#",
       "stars": 2,
       "forks": 1,
+      "openIssues": 0,
       "updatedAt": "2026-02-16T20:19:22Z",
       "pushedAt": "2023-03-09T18:11:48Z",
       "latestActivity": {
@@ -193,9 +221,13 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260125T220429Z/tbm0115/Path-Structure",
       "localPreviewUrl": "assets/repo-previews/tbm0115-path-structure.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
       "language": "Visual Basic",
       "stars": 0,
       "forks": 0,
+      "openIssues": 0,
       "updatedAt": "2026-01-25T22:04:29Z",
       "pushedAt": "2018-06-11T20:41:00Z",
       "latestActivity": {
@@ -215,9 +247,13 @@
       "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20251107T154418Z/tbm0115/Sticky-Notes-Grid",
       "localPreviewUrl": "assets/repo-previews/tbm0115-sticky-notes-grid.png",
       "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
       "language": null,
       "stars": 0,
       "forks": 0,
+      "openIssues": 1,
       "updatedAt": "2025-11-07T15:44:18Z",
       "pushedAt": "2025-11-07T16:49:45Z",
       "latestActivity": {
@@ -230,6 +266,13 @@
     }
   ],
   "latestPublicEvents": [
+    {
+      "type": "Push",
+      "repo": "tbm0115/tbm0115.github.io",
+      "summary": "Updated master",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "createdAt": "2026-06-02T01:50:10Z"
+    },
     {
       "type": "Push",
       "repo": "tbm0115/tbm0115.github.io",
@@ -292,13 +335,6 @@
       "summary": "Updated master",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-05-29T17:59:36Z"
-    },
-    {
-      "type": "Delete",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Deleted branch feature/JsonInterchange",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-05-29T17:41:56Z"
     }
   ],
   "profileUrl": "https://github.com/tbm0115",
