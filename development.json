@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-06-19T08:14:39.512Z",
+  "lastUpdatedAt": "2026-06-19T13:27:53.677Z",
   "status": "ok",
   "githubUsername": "tbm0115",
   "summary": {
@@ -53,38 +53,12 @@
   ],
   "recentRepositories": [
     {
-      "name": "tbm0115.github.io",
-      "fullName": "tbm0115/tbm0115.github.io",
-      "description": "Personal site",
-      "url": "https://github.com/tbm0115/tbm0115.github.io",
-      "homepageUrl": "https://traismcallister.me",
-      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260619T013345Z/tbm0115/tbm0115.github.io",
-      "localPreviewUrl": "assets/repo-previews/tbm0115-tbm0115-github-io.png",
-      "previewStatus": "cached",
-      "archived": false,
-      "fork": false,
-      "topics": [],
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-06-19T01:33:45Z",
-      "pushedAt": "2026-06-19T01:33:41Z",
-      "latestActivity": {
-        "type": "Push",
-        "repo": "tbm0115/tbm0115.github.io",
-        "summary": "Updated master",
-        "url": "https://github.com/tbm0115/tbm0115.github.io",
-        "createdAt": "2026-06-02T01:50:10Z"
-      }
-    },
-    {
       "name": "ThinkComposer",
       "fullName": "tbm0115/ThinkComposer",
       "description": "The Visual Thinking tool for Understand Problems, Design Solutions and Express Knowledge.",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "homepageUrl": null,
-      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260603T030739Z/tbm0115/ThinkComposer",
+      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260619T115941Z/tbm0115/ThinkComposer",
       "localPreviewUrl": "assets/repo-previews/tbm0115-thinkcomposer.png",
       "previewStatus": "cached",
       "archived": false,
@@ -94,14 +68,40 @@
       "stars": 0,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-06-03T03:07:39Z",
-      "pushedAt": "2026-06-04T15:28:38Z",
+      "updatedAt": "2026-06-19T11:59:41Z",
+      "pushedAt": "2026-06-19T12:40:30Z",
       "latestActivity": {
         "type": "Create",
         "repo": "tbm0115/ThinkComposer",
-        "summary": "Created branch feature/LargeImportVisualStrategy",
+        "summary": "Created branch feature/docs-migration",
         "url": "https://github.com/tbm0115/ThinkComposer",
-        "createdAt": "2026-06-04T15:28:39Z"
+        "createdAt": "2026-06-19T12:40:31Z"
+      }
+    },
+    {
+      "name": "tbm0115.github.io",
+      "fullName": "tbm0115/tbm0115.github.io",
+      "description": "Personal site",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "homepageUrl": "https://traismcallister.me",
+      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260619T081452Z/tbm0115/tbm0115.github.io",
+      "localPreviewUrl": "assets/repo-previews/tbm0115-tbm0115-github-io.png",
+      "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-06-19T08:14:52Z",
+      "pushedAt": "2026-06-19T08:14:48Z",
+      "latestActivity": {
+        "type": "Push",
+        "repo": "tbm0115/tbm0115.github.io",
+        "summary": "Updated master",
+        "url": "https://github.com/tbm0115/tbm0115.github.io",
+        "createdAt": "2026-06-02T01:50:10Z"
       }
     },
     {
@@ -267,74 +267,74 @@
   ],
   "latestPublicEvents": [
     {
-      "type": "Pull Request",
-      "repo": "mtconnect/2025-MTConnect-Bootcamp",
-      "summary": "Merged PR #1: mtconnect/2025-MTConnect-Bootcamp",
-      "url": "https://github.com/mtconnect/2025-MTConnect-Bootcamp",
-      "createdAt": "2026-06-17T07:10:58Z"
-    },
-    {
-      "type": "Push",
-      "repo": "TrueAnalyticsSolutions/PublicMTConnectAgentValidation",
-      "summary": "Updated main",
-      "url": "https://github.com/TrueAnalyticsSolutions/PublicMTConnectAgentValidation",
-      "createdAt": "2026-06-05T18:30:53Z"
-    },
-    {
-      "type": "Push",
-      "repo": "TrueAnalyticsSolutions/PublicMTConnectAgentValidation",
-      "summary": "Updated main",
-      "url": "https://github.com/TrueAnalyticsSolutions/PublicMTConnectAgentValidation",
-      "createdAt": "2026-06-05T14:32:20Z"
-    },
-    {
       "type": "Create",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "Created branch feature/LargeImportVisualStrategy",
+      "summary": "Created branch feature/docs-migration",
       "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-04T15:28:39Z"
-    },
-    {
-      "type": "Push",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Updated OutputTemplateGenerationUX",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-04T04:32:22Z"
-    },
-    {
-      "type": "Create",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Created branch feature/OutputTemplateGenerationUX",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-04T03:41:08Z"
-    },
-    {
-      "type": "Create",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Created branch bug/OutputTemplateGenerationHardening",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-03T14:34:49Z"
-    },
-    {
-      "type": "Push",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Updated CompositionOutputTemplateMaterialization",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-03T04:12:10Z"
-    },
-    {
-      "type": "Create",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Created branch bug/CompositionOutputTemplateMaterialization",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-03T03:12:43Z"
+      "createdAt": "2026-06-19T12:40:31Z"
     },
     {
       "type": "Delete",
       "repo": "tbm0115/ThinkComposer",
-      "summary": "Deleted branch bug/CompositionJsonImport",
+      "summary": "Deleted branch feature/GraphLayoutAndRelationshipRoutingHardening",
       "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-06-03T03:07:38Z"
+      "createdAt": "2026-06-19T11:59:36Z"
+    },
+    {
+      "type": "Push",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Updated master",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:59:34Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Merged PR #6: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:59:33Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Labeled PR #6: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:59:19Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Assigned PR #6: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:59:19Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Opened PR #6: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:59:19Z"
+    },
+    {
+      "type": "Delete",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Deleted branch feature/OutputTemplateGenerationUX",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:58:07Z"
+    },
+    {
+      "type": "Delete",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Deleted branch bug/CompositionOutputTemplateMaterialization",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:58:03Z"
+    },
+    {
+      "type": "Delete",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Deleted branch bug/OutputTemplateGenerationHardening",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-06-19T11:57:51Z"
     }
   ],
   "profileUrl": "https://github.com/tbm0115",
