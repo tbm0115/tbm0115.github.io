@@ -1,9 +1,9 @@
 {
-  "lastUpdatedAt": "2026-06-22T08:29:22.487Z",
+  "lastUpdatedAt": "2026-06-22T14:11:32.013Z",
   "summary": {
     "checked": 9,
-    "reachable": 6,
-    "unreachable": 0,
+    "reachable": 5,
+    "unreachable": 1,
     "unknown": 3,
     "feedsChecked": 4,
     "feedErrors": 0
@@ -19,42 +19,42 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 233,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 266,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "ok",
       "latestItems": [
         {
-          "title": "Created branch migration/dotnet-standard",
-          "url": "https://github.com/tbm0115/ThinkComposer",
-          "publishedAt": "2026-06-22T04:11:08Z"
+          "title": "Updated develop",
+          "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "publishedAt": "2026-06-22T12:36:00Z"
         },
         {
-          "title": "Deleted branch tbm0115/OriginIssuesFix",
-          "url": "https://github.com/tbm0115/ThinkComposer",
-          "publishedAt": "2026-06-19T14:53:44Z"
+          "title": "Updated develop",
+          "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "publishedAt": "2026-06-22T12:33:56Z"
         },
         {
-          "title": "Merged PR #8: tbm0115/ThinkComposer",
-          "url": "https://github.com/tbm0115/ThinkComposer",
-          "publishedAt": "2026-06-19T14:53:37Z"
+          "title": "Deleted branch tbm0115/v2.7",
+          "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "publishedAt": "2026-06-22T12:14:51Z"
         },
         {
-          "title": "Updated master",
-          "url": "https://github.com/tbm0115/ThinkComposer",
-          "publishedAt": "2026-06-19T14:53:38Z"
+          "title": "Updated develop",
+          "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "publishedAt": "2026-06-22T12:14:49Z"
         },
         {
-          "title": "Opened PR #8: tbm0115/ThinkComposer",
-          "url": "https://github.com/tbm0115/ThinkComposer",
-          "publishedAt": "2026-06-19T14:53:25Z"
+          "title": "Opened PR #3: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "publishedAt": "2026-06-22T12:14:41Z"
         }
       ]
     },
@@ -65,15 +65,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 46,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 198,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -88,15 +88,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 129,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 106,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -137,15 +137,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 184,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 194,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -186,15 +186,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 325,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 206,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -230,17 +230,17 @@
       "category": "Software",
       "type": "Member",
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
-      "isReachable": true,
-      "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "isReachable": false,
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
-        "ok": true,
-        "reachabilityStatus": "reachable",
-        "statusCode": 200,
-        "statusText": "OK",
-        "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 907,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "ok": false,
+        "reachabilityStatus": "unknown",
+        "statusCode": 429,
+        "statusText": "Too Many Requests",
+        "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
+        "responseTimeMs": 123,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -251,16 +251,16 @@
       "type": "Contributor",
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 429,
-        "statusText": "Too Many Requests",
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 125,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 107,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -272,15 +272,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 205,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 210,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -292,15 +292,15 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-22T08:29:22.487Z",
+      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 197,
-        "checkedAt": "2026-06-22T08:29:22.487Z"
+        "responseTimeMs": 208,
+        "checkedAt": "2026-06-22T14:11:32.013Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -310,37 +310,37 @@
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Created branch migration/dotnet-standard",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "publishedAt": "2026-06-22T04:11:08Z"
+      "title": "Updated develop",
+      "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "publishedAt": "2026-06-22T12:36:00Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Deleted branch tbm0115/OriginIssuesFix",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "publishedAt": "2026-06-19T14:53:44Z"
+      "title": "Updated develop",
+      "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "publishedAt": "2026-06-22T12:33:56Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Updated master",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "publishedAt": "2026-06-19T14:53:38Z"
+      "title": "Deleted branch tbm0115/v2.7",
+      "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "publishedAt": "2026-06-22T12:14:51Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Merged PR #8: tbm0115/ThinkComposer",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "publishedAt": "2026-06-19T14:53:37Z"
+      "title": "Updated develop",
+      "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "publishedAt": "2026-06-22T12:14:49Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Opened PR #8: tbm0115/ThinkComposer",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "publishedAt": "2026-06-19T14:53:25Z"
+      "title": "Opened PR #3: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "publishedAt": "2026-06-22T12:14:41Z"
     },
     {
       "source": "Stack Exchange - Internet of Things",
