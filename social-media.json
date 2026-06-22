@@ -1,10 +1,10 @@
 {
-  "lastUpdatedAt": "2026-06-22T14:11:32.013Z",
+  "lastUpdatedAt": "2026-06-22T19:26:23.594Z",
   "summary": {
     "checked": 9,
-    "reachable": 5,
+    "reachable": 6,
     "unreachable": 1,
-    "unknown": 3,
+    "unknown": 2,
     "feedsChecked": 4,
     "feedErrors": 0
   },
@@ -19,42 +19,42 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 266,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 439,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "ok",
       "latestItems": [
         {
-          "title": "Updated develop",
+          "title": "Deleted branch tbm0115/v2.8",
           "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-          "publishedAt": "2026-06-22T12:36:00Z"
+          "publishedAt": "2026-06-22T19:19:32Z"
         },
         {
           "title": "Updated develop",
           "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-          "publishedAt": "2026-06-22T12:33:56Z"
+          "publishedAt": "2026-06-22T19:19:30Z"
         },
         {
-          "title": "Deleted branch tbm0115/v2.7",
+          "title": "Labeled PR #4: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
           "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-          "publishedAt": "2026-06-22T12:14:51Z"
+          "publishedAt": "2026-06-22T19:19:22Z"
         },
         {
-          "title": "Updated develop",
+          "title": "Opened PR #4: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
           "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-          "publishedAt": "2026-06-22T12:14:49Z"
+          "publishedAt": "2026-06-22T19:19:22Z"
         },
         {
-          "title": "Opened PR #3: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+          "title": "Created branch tbm0115/v2.8",
           "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-          "publishedAt": "2026-06-22T12:14:41Z"
+          "publishedAt": "2026-06-22T19:18:12Z"
         }
       ]
     },
@@ -65,15 +65,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 198,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 81,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -88,15 +88,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 106,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 186,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -137,15 +137,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 194,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 340,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -186,15 +186,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 206,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 297,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -230,17 +230,17 @@
       "category": "Software",
       "type": "Member",
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
-      "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
-        "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 429,
-        "statusText": "Too Many Requests",
-        "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
-        "responseTimeMs": 123,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
+        "responseTimeMs": 1037,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -252,15 +252,15 @@
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 107,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 281,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -272,15 +272,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 210,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 594,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -292,15 +292,15 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-06-22T14:11:32.013Z",
+      "lastCheckedAt": "2026-06-22T19:26:23.594Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 208,
-        "checkedAt": "2026-06-22T14:11:32.013Z"
+        "responseTimeMs": 185,
+        "checkedAt": "2026-06-22T19:26:23.594Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -310,37 +310,37 @@
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Updated develop",
+      "title": "Deleted branch tbm0115/v2.8",
       "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-      "publishedAt": "2026-06-22T12:36:00Z"
+      "publishedAt": "2026-06-22T19:19:32Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
       "title": "Updated develop",
       "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-      "publishedAt": "2026-06-22T12:33:56Z"
+      "publishedAt": "2026-06-22T19:19:30Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Deleted branch tbm0115/v2.7",
+      "title": "Labeled PR #4: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
       "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-      "publishedAt": "2026-06-22T12:14:51Z"
+      "publishedAt": "2026-06-22T19:19:22Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Updated develop",
+      "title": "Opened PR #4: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
       "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-      "publishedAt": "2026-06-22T12:14:49Z"
+      "publishedAt": "2026-06-22T19:19:22Z"
     },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
-      "title": "Opened PR #3: mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
+      "title": "Created branch tbm0115/v2.8",
       "url": "https://github.com/mtconnect/MtconnectTranspiler.CodeGenerators.ScribanTemplates",
-      "publishedAt": "2026-06-22T12:14:41Z"
+      "publishedAt": "2026-06-22T19:18:12Z"
     },
     {
       "source": "Stack Exchange - Internet of Things",
