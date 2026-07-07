@@ -1,10 +1,10 @@
 {
-  "lastUpdatedAt": "2026-07-07T10:00:26.091Z",
+  "lastUpdatedAt": "2026-07-07T15:13:52.882Z",
   "summary": {
     "checked": 9,
     "reachable": 6,
-    "unreachable": 1,
-    "unknown": 2,
+    "unreachable": 0,
+    "unknown": 3,
     "feedsChecked": 4,
     "feedErrors": 0
   },
@@ -19,18 +19,33 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 339,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 288,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "ok",
       "latestItems": [
+        {
+          "title": "Updated Cli",
+          "url": "https://github.com/tbm0115/ThinkComposer",
+          "publishedAt": "2026-07-07T14:58:43Z"
+        },
+        {
+          "title": "Updated Cli",
+          "url": "https://github.com/tbm0115/ThinkComposer",
+          "publishedAt": "2026-07-07T14:55:33Z"
+        },
+        {
+          "title": "Created branch tbm0115/Cli",
+          "url": "https://github.com/tbm0115/ThinkComposer",
+          "publishedAt": "2026-07-07T13:41:51Z"
+        },
         {
           "title": "Updated master",
           "url": "https://github.com/tbm0115/ThinkComposer",
@@ -40,21 +55,6 @@
           "title": "Updated main",
           "url": "https://github.com/tbm0115/Sticky-Notes-Grid",
           "publishedAt": "2026-06-24T17:31:27Z"
-        },
-        {
-          "title": "Pull Request Review",
-          "url": "https://github.com/tbm0115/Consoul",
-          "publishedAt": "2026-06-23T07:29:35Z"
-        },
-        {
-          "title": "Merged PR #14: mtconnect/MtconnectTranspiler.Sinks.CSharp",
-          "url": "https://github.com/mtconnect/MtconnectTranspiler.Sinks.CSharp",
-          "publishedAt": "2026-06-22T21:05:45Z"
-        },
-        {
-          "title": "Updated v2026-overhaul",
-          "url": "https://github.com/tbm0115/Consoul",
-          "publishedAt": "2026-06-23T06:14:58Z"
         }
       ]
     },
@@ -65,15 +65,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 46,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 59,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -88,15 +88,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 102,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 221,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -138,15 +138,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 282,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 165,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -188,15 +188,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 207,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 262,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -235,15 +235,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 1113,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 1111,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -254,16 +254,16 @@
       "type": "Contributor",
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
-      "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": false,
-        "reachabilityStatus": "unreachable",
-        "statusCode": 404,
-        "statusText": "Not Found",
+        "reachabilityStatus": "unknown",
+        "statusCode": 429,
+        "statusText": "Too Many Requests",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 123,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 232,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -275,15 +275,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 216,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 377,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -295,21 +295,42 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-07-07T10:00:26.091Z",
+      "lastCheckedAt": "2026-07-07T15:13:52.882Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 240,
-        "checkedAt": "2026-07-07T10:00:26.091Z"
+        "responseTimeMs": 310,
+        "checkedAt": "2026-07-07T15:13:52.882Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
     }
   ],
   "recentUpdates": [
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated Cli",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "publishedAt": "2026-07-07T14:58:43Z"
+    },
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated Cli",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "publishedAt": "2026-07-07T14:55:33Z"
+    },
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Created branch tbm0115/Cli",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "publishedAt": "2026-07-07T13:41:51Z"
+    },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
@@ -323,27 +344,6 @@
       "title": "Updated main",
       "url": "https://github.com/tbm0115/Sticky-Notes-Grid",
       "publishedAt": "2026-06-24T17:31:27Z"
-    },
-    {
-      "source": "GitHub",
-      "sourceUrl": "https://github.com/tbm0115",
-      "title": "Pull Request Review",
-      "url": "https://github.com/tbm0115/Consoul",
-      "publishedAt": "2026-06-23T07:29:35Z"
-    },
-    {
-      "source": "GitHub",
-      "sourceUrl": "https://github.com/tbm0115",
-      "title": "Updated v2026-overhaul",
-      "url": "https://github.com/tbm0115/Consoul",
-      "publishedAt": "2026-06-23T06:14:58Z"
-    },
-    {
-      "source": "GitHub",
-      "sourceUrl": "https://github.com/tbm0115",
-      "title": "Merged PR #14: mtconnect/MtconnectTranspiler.Sinks.CSharp",
-      "url": "https://github.com/mtconnect/MtconnectTranspiler.Sinks.CSharp",
-      "publishedAt": "2026-06-22T21:05:45Z"
     },
     {
       "source": "Stack Exchange - Internet of Things",
