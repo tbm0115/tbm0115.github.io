@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-07-09T09:56:43.735Z",
+  "lastUpdatedAt": "2026-07-09T15:33:04.525Z",
   "status": "ok",
   "githubUsername": "tbm0115",
   "summary": {
@@ -53,38 +53,12 @@
   ],
   "recentRepositories": [
     {
-      "name": "tbm0115.github.io",
-      "fullName": "tbm0115/tbm0115.github.io",
-      "description": "Personal site",
-      "url": "https://github.com/tbm0115/tbm0115.github.io",
-      "homepageUrl": "https://traismcallister.me",
-      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260709T041315Z/tbm0115/tbm0115.github.io",
-      "localPreviewUrl": "assets/repo-previews/tbm0115-tbm0115-github-io.png",
-      "previewStatus": "cached",
-      "archived": false,
-      "fork": false,
-      "topics": [],
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "openIssues": 0,
-      "updatedAt": "2026-07-09T04:13:15Z",
-      "pushedAt": "2026-07-09T04:13:12Z",
-      "latestActivity": {
-        "type": "Repository",
-        "repo": "tbm0115/tbm0115.github.io",
-        "summary": "Repository updated from a recent push",
-        "url": "https://github.com/tbm0115/tbm0115.github.io",
-        "createdAt": "2026-07-09T04:13:12Z"
-      }
-    },
-    {
       "name": "ThinkComposer",
       "fullName": "tbm0115/ThinkComposer",
       "description": "The Visual Thinking tool for Understand Problems, Design Solutions and Express Knowledge.",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "homepageUrl": null,
-      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260709T040554Z/tbm0115/ThinkComposer",
+      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260709T152420Z/tbm0115/ThinkComposer",
       "localPreviewUrl": "assets/repo-previews/tbm0115-thinkcomposer.png",
       "previewStatus": "cached",
       "archived": false,
@@ -94,14 +68,40 @@
       "stars": 0,
       "forks": 0,
       "openIssues": 0,
-      "updatedAt": "2026-07-09T04:05:54Z",
-      "pushedAt": "2026-07-09T04:05:50Z",
+      "updatedAt": "2026-07-09T15:24:20Z",
+      "pushedAt": "2026-07-09T15:22:32Z",
       "latestActivity": {
-        "type": "Push",
+        "type": "Delete",
         "repo": "tbm0115/ThinkComposer",
-        "summary": "Updated master",
+        "summary": "Deleted branch tbm0115/Theme",
         "url": "https://github.com/tbm0115/ThinkComposer",
-        "createdAt": "2026-07-09T04:05:51Z"
+        "createdAt": "2026-07-09T15:22:33Z"
+      }
+    },
+    {
+      "name": "tbm0115.github.io",
+      "fullName": "tbm0115/tbm0115.github.io",
+      "description": "Personal site",
+      "url": "https://github.com/tbm0115/tbm0115.github.io",
+      "homepageUrl": "https://traismcallister.me",
+      "socialPreviewSourceUrl": "https://opengraph.githubassets.com/20260709T095704Z/tbm0115/tbm0115.github.io",
+      "localPreviewUrl": "assets/repo-previews/tbm0115-tbm0115-github-io.png",
+      "previewStatus": "cached",
+      "archived": false,
+      "fork": false,
+      "topics": [],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "updatedAt": "2026-07-09T09:57:04Z",
+      "pushedAt": "2026-07-09T09:56:52Z",
+      "latestActivity": {
+        "type": "Repository",
+        "repo": "tbm0115/tbm0115.github.io",
+        "summary": "Repository updated from a recent push",
+        "url": "https://github.com/tbm0115/tbm0115.github.io",
+        "createdAt": "2026-07-09T09:56:52Z"
       }
     },
     {
@@ -123,11 +123,11 @@
       "updatedAt": "2026-06-24T17:31:39Z",
       "pushedAt": "2026-06-24T17:31:26Z",
       "latestActivity": {
-        "type": "Push",
+        "type": "Repository",
         "repo": "tbm0115/Sticky-Notes-Grid",
-        "summary": "Updated main",
+        "summary": "Repository updated from a recent push",
         "url": "https://github.com/tbm0115/Sticky-Notes-Grid",
-        "createdAt": "2026-06-24T17:31:27Z"
+        "createdAt": "2026-06-24T17:31:26Z"
       }
     },
     {
@@ -179,11 +179,11 @@
       "updatedAt": "2026-04-12T15:50:25Z",
       "pushedAt": "2026-06-23T06:14:57Z",
       "latestActivity": {
-        "type": "Pull Request Review",
+        "type": "Repository",
         "repo": "tbm0115/Consoul",
-        "summary": "Pull Request Review",
+        "summary": "Repository updated from a recent push",
         "url": "https://github.com/tbm0115/Consoul",
-        "createdAt": "2026-06-23T07:29:35Z"
+        "createdAt": "2026-06-23T06:14:57Z"
       }
     },
     {
@@ -267,6 +267,62 @@
   ],
   "latestPublicEvents": [
     {
+      "type": "Delete",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Deleted branch tbm0115/Theme",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:22:33Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Merged PR #11: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:22:29Z"
+    },
+    {
+      "type": "Push",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Updated master",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:22:31Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Labeled PR #11: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:22:21Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Assigned PR #11: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:22:21Z"
+    },
+    {
+      "type": "Pull Request",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Opened PR #11: tbm0115/ThinkComposer",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:22:21Z"
+    },
+    {
+      "type": "Create",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Created branch tbm0115/Theme",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T15:03:52Z"
+    },
+    {
+      "type": "Push",
+      "repo": "tbm0115/ThinkComposer",
+      "summary": "Updated master",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "createdAt": "2026-07-09T12:18:36Z"
+    },
+    {
       "type": "Push",
       "repo": "tbm0115/ThinkComposer",
       "summary": "Updated master",
@@ -279,62 +335,6 @@
       "summary": "Deleted branch tbm0115/GitSupport",
       "url": "https://github.com/tbm0115/ThinkComposer",
       "createdAt": "2026-07-09T03:20:44Z"
-    },
-    {
-      "type": "Pull Request",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Merged PR #10: tbm0115/ThinkComposer",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-09T03:20:41Z"
-    },
-    {
-      "type": "Push",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Updated master",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-09T03:20:42Z"
-    },
-    {
-      "type": "Pull Request",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Labeled PR #10: tbm0115/ThinkComposer",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-09T03:20:10Z"
-    },
-    {
-      "type": "Pull Request",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Assigned PR #10: tbm0115/ThinkComposer",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-09T03:20:10Z"
-    },
-    {
-      "type": "Pull Request",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Opened PR #10: tbm0115/ThinkComposer",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-09T03:20:10Z"
-    },
-    {
-      "type": "Push",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Updated GitSupport",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-09T03:15:21Z"
-    },
-    {
-      "type": "Create",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Created branch tbm0115/GitSupport",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-08T18:57:32Z"
-    },
-    {
-      "type": "Delete",
-      "repo": "tbm0115/ThinkComposer",
-      "summary": "Deleted branch tbm0115/Cli",
-      "url": "https://github.com/tbm0115/ThinkComposer",
-      "createdAt": "2026-07-08T16:31:08Z"
     }
   ],
   "profileUrl": "https://github.com/tbm0115",
