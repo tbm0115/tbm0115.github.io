@@ -1,10 +1,10 @@
 {
-  "lastUpdatedAt": "2026-09-01T05:07:04.949Z",
+  "lastUpdatedAt": "2026-09-01T11:38:15.673Z",
   "summary": {
     "checked": 9,
     "reachable": 6,
-    "unreachable": 0,
-    "unknown": 3,
+    "unreachable": 1,
+    "unknown": 2,
     "feedsChecked": 4,
     "feedErrors": 0
   },
@@ -19,15 +19,15 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 320,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 227,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -60,15 +60,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 136,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 215,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -83,15 +83,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 94,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 77,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -133,15 +133,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 238,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 220,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -183,15 +183,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 229,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 287,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -230,15 +230,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 847,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 1204,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -249,16 +249,16 @@
       "type": "Contributor",
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "reachabilityStatus": "unreachable",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 429,
-        "statusText": "Too Many Requests",
+        "reachabilityStatus": "unreachable",
+        "statusCode": 404,
+        "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 107,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 261,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -270,15 +270,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 204,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 358,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -290,15 +290,15 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-01T05:07:04.949Z",
+      "lastCheckedAt": "2026-09-01T11:38:15.673Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 355,
-        "checkedAt": "2026-09-01T05:07:04.949Z"
+        "responseTimeMs": 329,
+        "checkedAt": "2026-09-01T11:38:15.673Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
