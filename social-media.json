@@ -1,10 +1,10 @@
 {
-  "lastUpdatedAt": "2026-09-19T20:39:27.583Z",
+  "lastUpdatedAt": "2026-09-20T04:53:12.776Z",
   "summary": {
     "checked": 9,
-    "reachable": 3,
+    "reachable": 6,
     "unreachable": 1,
-    "unknown": 5,
+    "unknown": 2,
     "feedsChecked": 4,
     "feedErrors": 0
   },
@@ -19,15 +19,15 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 482,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 272,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -55,15 +55,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 27,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 45,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -76,17 +76,17 @@
       "activitySource": "stackexchange-timeline",
       "stackExchangeSite": "stackoverflow",
       "stackExchangeUserId": 4585104,
-      "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
-        "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 403,
-        "statusText": "Forbidden",
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 135,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 89,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -126,20 +126,25 @@
       "activitySource": "stackexchange-timeline",
       "stackExchangeSite": "3dprinting",
       "stackExchangeUserId": 98,
-      "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
-        "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 403,
-        "statusText": "Forbidden",
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 129,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 170,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "ok",
       "latestItems": [
+        {
+          "title": "Cons to UV printing",
+          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+          "publishedAt": "2026-09-20T03:33:00.000Z"
+        },
         {
           "title": "badge on Stack Exchange - 3D Printing",
           "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
@@ -159,11 +164,6 @@
           "title": "What is the MightyBoard 1280 IO used for?",
           "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
           "publishedAt": "2024-08-18T20:26:55.000Z"
-        },
-        {
-          "title": "badge on Stack Exchange - 3D Printing",
-          "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-          "publishedAt": "2024-01-12T21:42:25.000Z"
         }
       ],
       "feedError": "429 Too Many Requests from https://api.stackexchange.com/2.3/users/98/timeline?site=3dprinting&pagesize=5"
@@ -176,17 +176,17 @@
       "activitySource": "stackexchange-timeline",
       "stackExchangeSite": "iot",
       "stackExchangeUserId": 16,
-      "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
-        "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": 403,
-        "statusText": "Forbidden",
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 241,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 226,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -225,15 +225,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 1803,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 1064,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -245,15 +245,15 @@
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 478,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 159,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -265,15 +265,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 1063,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 270,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -285,21 +285,28 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-09-19T20:39:27.583Z",
+      "lastCheckedAt": "2026-09-20T04:53:12.776Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 1173,
-        "checkedAt": "2026-09-19T20:39:27.583Z"
+        "responseTimeMs": 100,
+        "checkedAt": "2026-09-20T04:53:12.776Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
     }
   ],
   "recentUpdates": [
+    {
+      "source": "Stack Exchange - 3D Printing",
+      "sourceUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "title": "Cons to UV printing",
+      "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "publishedAt": "2026-09-20T03:33:00.000Z"
+    },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
@@ -362,13 +369,6 @@
       "title": "badge on Stack Exchange - Internet of Things",
       "url": "https://iot.stackexchange.com/users/16/tbm0115",
       "publishedAt": "2024-12-06T17:52:20.000Z"
-    },
-    {
-      "source": "Stack Exchange - Internet of Things",
-      "sourceUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-      "title": "How can I monitor movement of subterranean wall?",
-      "url": "https://iot.stackexchange.com/users/16/tbm0115",
-      "publishedAt": "2024-10-02T14:37:17.000Z"
     }
   ]
 }
