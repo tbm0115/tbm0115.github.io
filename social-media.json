@@ -1,9 +1,9 @@
 {
-  "lastUpdatedAt": "2026-10-02T12:33:29.518Z",
+  "lastUpdatedAt": "2026-10-02T22:13:25.256Z",
   "summary": {
     "checked": 9,
-    "reachable": 4,
-    "unreachable": 3,
+    "reachable": 5,
+    "unreachable": 2,
     "unknown": 2,
     "feedsChecked": 4,
     "feedErrors": 0
@@ -17,20 +17,25 @@
       "activitySource": "github-events",
       "githubUsername": "tbm0115",
       "feedUrl": "https://github.com/tbm0115.atom",
-      "isReachable": false,
-      "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
-        "ok": false,
-        "reachabilityStatus": "unreachable",
-        "statusCode": 504,
-        "statusText": "Gateway Time-out",
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 11150,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 392,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "ok",
       "latestItems": [
+        {
+          "title": "Updated master",
+          "url": "https://github.com/TrueAnalyticsSolutions/FaroArmAdapter",
+          "publishedAt": "2026-10-02T04:23:19Z"
+        },
         {
           "title": "Updated main",
           "url": "https://github.com/Off-the-Wall-Creations/LaserBatcher",
@@ -55,15 +60,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 133,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 34,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -78,15 +83,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 209,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 88,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -128,15 +133,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 311,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 127,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -178,15 +183,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 317,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 137,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -225,15 +230,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 599,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 356,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -245,15 +250,15 @@
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 339,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 178,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -265,15 +270,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 560,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 409,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -285,21 +290,28 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-02T12:33:29.518Z",
+      "lastCheckedAt": "2026-10-02T22:13:25.256Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 379,
-        "checkedAt": "2026-10-02T12:33:29.518Z"
+        "responseTimeMs": 125,
+        "checkedAt": "2026-10-02T22:13:25.256Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
     }
   ],
   "recentUpdates": [
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated master",
+      "url": "https://github.com/TrueAnalyticsSolutions/FaroArmAdapter",
+      "publishedAt": "2026-10-02T04:23:19Z"
+    },
     {
       "source": "Stack Exchange - 3D Printing",
       "sourceUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
@@ -362,13 +374,6 @@
       "title": "badge on Stack Exchange - 3D Printing",
       "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
       "publishedAt": "2025-01-12T21:56:55.000Z"
-    },
-    {
-      "source": "Stack Exchange - Internet of Things",
-      "sourceUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-      "title": "badge on Stack Exchange - Internet of Things",
-      "url": "https://iot.stackexchange.com/users/16/tbm0115",
-      "publishedAt": "2024-12-06T17:52:20.000Z"
     }
   ]
 }
