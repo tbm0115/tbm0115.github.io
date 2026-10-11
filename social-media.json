@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-10-11T05:45:27.098Z",
+  "lastUpdatedAt": "2026-10-11T12:48:30.974Z",
   "summary": {
     "checked": 9,
     "reachable": 5,
@@ -19,15 +19,15 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 206,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 321,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -50,11 +50,6 @@
           "title": "Updated main",
           "url": "https://github.com/Off-the-Wall-Creations/LaserBatcher",
           "publishedAt": "2026-09-12T01:55:16Z"
-        },
-        {
-          "title": "Updated master",
-          "url": "https://github.com/TrueAnalyticsSolutions/Mtconnect.MakerBotAdapter",
-          "publishedAt": "2026-09-09T18:43:26Z"
         }
       ]
     },
@@ -65,15 +60,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 46,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 93,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -88,15 +83,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 79,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 120,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -138,15 +133,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 134,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 229,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -188,15 +183,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 130,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 206,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -235,15 +230,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 396,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 438,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -255,15 +250,15 @@
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 80,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 180,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -275,15 +270,15 @@
       "url": "https://www.makexyz.com/store/maker/tbm0115",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 101,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 293,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -295,15 +290,15 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-11T05:45:27.098Z",
+      "lastCheckedAt": "2026-10-11T12:48:30.974Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 161,
-        "checkedAt": "2026-10-11T05:45:27.098Z"
+        "responseTimeMs": 256,
+        "checkedAt": "2026-10-11T12:48:30.974Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -346,13 +341,6 @@
       "publishedAt": "2026-09-12T01:55:16Z"
     },
     {
-      "source": "GitHub",
-      "sourceUrl": "https://github.com/tbm0115",
-      "title": "Updated master",
-      "url": "https://github.com/TrueAnalyticsSolutions/Mtconnect.MakerBotAdapter",
-      "publishedAt": "2026-09-09T18:43:26Z"
-    },
-    {
       "source": "Stack Exchange - Internet of Things",
       "sourceUrl": "https://iot.stackexchange.com/users/16/tbm0115",
       "title": "SmartThings Zigbee Devices won&#39;t connect",
@@ -379,6 +367,13 @@
       "title": "What filament material is safe to use as in-wall housing (US)?",
       "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
       "publishedAt": "2025-11-20T11:53:00.000Z"
+    },
+    {
+      "source": "Stack Exchange - 3D Printing",
+      "sourceUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "title": "badge on Stack Exchange - 3D Printing",
+      "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
+      "publishedAt": "2025-01-12T21:56:55.000Z"
     }
   ]
 }
