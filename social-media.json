@@ -1,9 +1,9 @@
 {
-  "lastUpdatedAt": "2026-10-13T00:38:39.510Z",
+  "lastUpdatedAt": "2026-10-13T14:10:17.669Z",
   "summary": {
     "checked": 9,
-    "reachable": 4,
-    "unreachable": 2,
+    "reachable": 5,
+    "unreachable": 1,
     "unknown": 3,
     "feedsChecked": 4,
     "feedErrors": 0
@@ -19,18 +19,23 @@
       "feedUrl": "https://github.com/tbm0115.atom",
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://github.com/tbm0115",
-        "responseTimeMs": 216,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 2774,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "ok",
       "latestItems": [
+        {
+          "title": "Updated SysML",
+          "url": "https://github.com/tbm0115/ThinkComposer",
+          "publishedAt": "2026-10-12T15:21:35Z"
+        },
         {
           "title": "Created branch tbm0115/SysML",
           "url": "https://github.com/tbm0115/ThinkComposer",
@@ -55,15 +60,15 @@
       "url": "https://codepen.io/tbm0115",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://codepen.io/tbm0115",
-        "responseTimeMs": 54,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 46,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -78,15 +83,15 @@
       "stackExchangeUserId": 4585104,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://stackoverflow.com/users/story/4585104",
-        "responseTimeMs": 126,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 123,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -128,15 +133,15 @@
       "stackExchangeUserId": 98,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://3dprinting.stackexchange.com/users/98/tbm0115",
-        "responseTimeMs": 262,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 162,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -178,15 +183,15 @@
       "stackExchangeUserId": 16,
       "isReachable": true,
       "reachabilityStatus": "reachable",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": true,
         "reachabilityStatus": "reachable",
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-        "responseTimeMs": 281,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 253,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "ok",
       "latestItems": [
@@ -225,15 +230,15 @@
       "url": "https://www.linkedin.com/in/trais-mcallister-19648b5b/",
       "isReachable": false,
       "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unreachable",
         "statusCode": 404,
         "statusText": "Not Found",
         "finalUrl": "https://www.linkedin.com/in/trais-mcallister-19648b5b",
-        "responseTimeMs": 648,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 354,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -244,16 +249,16 @@
       "type": "Contributor",
       "url": "https://www.thingiverse.com/tbm0115/about",
       "isReachable": false,
-      "reachabilityStatus": "unreachable",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "reachabilityStatus": "unknown",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": false,
-        "reachabilityStatus": "unreachable",
-        "statusCode": 404,
-        "statusText": "Not Found",
+        "reachabilityStatus": "unknown",
+        "statusCode": 429,
+        "statusText": "Too Many Requests",
         "finalUrl": "https://www.thingiverse.com/tbm0115/about",
-        "responseTimeMs": 360,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 92,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -263,18 +268,17 @@
       "category": "3D Printing",
       "type": "Vendor",
       "url": "https://www.makexyz.com/store/maker/tbm0115",
-      "isReachable": false,
-      "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
-        "ok": false,
-        "reachabilityStatus": "unknown",
-        "statusCode": null,
-        "statusText": "Request failed",
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
         "finalUrl": "https://www.makexyz.com/store/maker/tbm0115",
-        "responseTimeMs": 20001,
-        "checkedAt": "2026-10-13T00:38:39.510Z",
-        "error": "Request timed out"
+        "responseTimeMs": 221,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
@@ -286,21 +290,28 @@
       "url": "https://grabcad.com/trais.mcallister-1/",
       "isReachable": false,
       "reachabilityStatus": "unknown",
-      "lastCheckedAt": "2026-10-13T00:38:39.510Z",
+      "lastCheckedAt": "2026-10-13T14:10:17.669Z",
       "check": {
         "ok": false,
         "reachabilityStatus": "unknown",
         "statusCode": 403,
         "statusText": "Forbidden",
         "finalUrl": "https://grabcad.com/trais.mcallister-1/",
-        "responseTimeMs": 336,
-        "checkedAt": "2026-10-13T00:38:39.510Z"
+        "responseTimeMs": 150,
+        "checkedAt": "2026-10-13T14:10:17.669Z"
       },
       "feedStatus": "not-configured",
       "latestItems": []
     }
   ],
   "recentUpdates": [
+    {
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/tbm0115",
+      "title": "Updated SysML",
+      "url": "https://github.com/tbm0115/ThinkComposer",
+      "publishedAt": "2026-10-12T15:21:35Z"
+    },
     {
       "source": "GitHub",
       "sourceUrl": "https://github.com/tbm0115",
@@ -363,13 +374,6 @@
       "title": "badge on Stack Exchange - 3D Printing",
       "url": "https://3dprinting.stackexchange.com/users/98/tbm0115",
       "publishedAt": "2025-01-12T21:56:55.000Z"
-    },
-    {
-      "source": "Stack Exchange - Internet of Things",
-      "sourceUrl": "https://iot.stackexchange.com/users/16/tbm0115",
-      "title": "badge on Stack Exchange - Internet of Things",
-      "url": "https://iot.stackexchange.com/users/16/tbm0115",
-      "publishedAt": "2024-12-06T17:52:20.000Z"
     }
   ]
 }
