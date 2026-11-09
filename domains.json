@@ -52,11 +52,32 @@
       }
     },
     {
-      "name": "Recipedia",
+      "name": "LightWorks",
+      "base": "lightworks.app",
+      "isActive": true,
+      "status": "active",
+      "description": "LightWorks App Home",
+      "url": "https://lightworks.app",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-11-09T06:25:04.843Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://lightworks.app/",
+        "responseTimeMs": 299,
+        "checkedAt": "2026-11-09T06:25:04.843Z"
+      }
+    },
+    {
+      "name": "Home Recipes",
       "base": "recipedia.lightworks.app",
       "isActive": true,
       "status": "active",
-      "description": "Recipedia PWA",
+      "description": "Home Recipes PWA",
       "url": "https://recipedia.lightworks.app",
       "statusLabel": "Active",
       "isReachable": true,
@@ -68,6 +89,27 @@
         "statusCode": 200,
         "statusText": "OK",
         "finalUrl": "https://recipedia.lightworks.app/",
+        "responseTimeMs": 299,
+        "checkedAt": "2026-11-09T06:25:04.843Z"
+      }
+    },
+    {
+      "name": "Home Systems",
+      "base": "homesystems.lightworks.app",
+      "isActive": true,
+      "status": "active",
+      "description": "Home Systems PWA",
+      "url": "https://homesystems.lightworks.app",
+      "statusLabel": "Active",
+      "isReachable": true,
+      "reachabilityStatus": "reachable",
+      "lastCheckedAt": "2026-11-09T06:25:04.843Z",
+      "check": {
+        "ok": true,
+        "reachabilityStatus": "reachable",
+        "statusCode": 200,
+        "statusText": "OK",
+        "finalUrl": "https://homesystems.lightworks.app/",
         "responseTimeMs": 299,
         "checkedAt": "2026-11-09T06:25:04.843Z"
       }
